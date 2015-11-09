@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://hsh-ui.local/#/app/qm4 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>QM4</title>
+    <link href="css" rel="stylesheet" type="text/css">
+    <link href="ionic.css" rel="stylesheet">
+    <link href="ion-md-input.min.css" rel="stylesheet">
+    <link href="ionic.material.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="ionic.bundle.js"></script>
+    <script src="ionic.material.min.js"></script>
+    <script src="ion-md-input.min.js"></script>
+    <script src="websocket-ng.js"></script>
+    <script src="storage-ng.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+	
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+    <script src="controllers.js"></script>
+    <script src="config.js"></script>
+    
+    <script src="highcharts-ng.js"></script>
+    
+</head>
+<body ng-app="starter" class="grade-a platform-browser platform-linux platform-ready">
+    <ion-nav-view class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-side-menus enable-menu-with-back-views="true" class="pane view" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+    <ion-side-menu-content class="menu-content pane">
+        <ion-nav-bar class="bar-assertive-900 nav-bar-container" ng-class="{expanded: isExpanded, &#39;has-header-fab-left&#39;: hasHeaderFabLeft, &#39;has-header-fab-right&#39;: hasHeaderFabRight}" align-title="left" nav-bar-transition="ios" nav-bar-direction="none" nav-swipe="" style="display: block;">
+            <ion-nav-back-button class="hide"></ion-nav-back-button>
+            <ion-nav-buttons side="right" class="hide"></ion-nav-buttons>
+        <div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-assertive-900 bar bar-header disable-user-behavior" align-title="left"><button class="button back-button hide buttons no-text button-clear header-item" ng-click="$ionicGoBack($event)"><i class="icon ion-ios-arrow-back"></i> 
+            <span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="title title-left header-item"></div><div class="buttons buttons-right header-item"><span class="right-buttons">
+                <button class="button button-icon button-clear ion-android-more-vertical" menu-toggle="right">
+                </button>
+            </span></div></ion-header-bar></div><div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-assertive-900 bar bar-header disable-user-behavior" align-title="left"><button class="button back-button hide buttons no-text button-clear header-item" ng-click="$ionicGoBack($event)"><i class="icon ion-ios-arrow-back"></i> 
+            <span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="title title-left header-item" style="right: 68px;">QM4</div><div class="buttons buttons-right header-item"><span class="right-buttons">
+                <button class="button button-icon button-clear ion-android-more-vertical" menu-toggle="right">
+                </button>
+            </span></div></ion-header-bar></div></ion-nav-bar>
+        <ion-nav-view name="fabContent" class="view-container" nav-view-transition="ios"></ion-nav-view>
+        <ion-nav-view name="menuContent" ng-class="{expanded: isExpanded}" class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-view view-title="QM4" class="pane" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+    	<div class="list condensed-space no-padding animate-blinds done done done done">
+   			<!-- ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card balanced-bg in" style="transition-delay: 0.13s;" href="#/app/room/wz/Wohnzimmer/img%252Fsofa.jpg/img%252Ftorfabrik.jpg">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done done" style="transition-delay: 0.08s;">
+                       <h2 class="ng-binding">Wohnzimmer</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card royal-bg in" style="transition-delay: 0.13s;" href="#/app/room/office/B%C3%BCro/%252Fimg%252Foffice-stuhl.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 0.22s;">
+                       <h2 class="ng-binding">Büro</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card positive-bg in" style="transition-delay: 0.13s;" href="#/app/room/lukas/Lukas/%252Fimg%252Flukas-bruder.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 0.36s;">
+                       <h2 class="ng-binding">Lukas</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card energized-bg in" style="transition-delay: 0.13s;" href="#/app/room/emily/Emily/%252Fimg%252Femily-bauernhof.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 0.49s;">
+                       <h2 class="ng-binding">Emily</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card assertive-bg in" style="transition-delay: 0.13s;" href="#/app/room/bath_children/Kinderbad/%252Fimg%252Fkinderbad.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 0.63s;">
+                       <h2 class="ng-binding">Kinderbad</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card stable-bg in" style="transition-delay: 0.13s;" href="#/app/room/bath_parents/Elternbad/%252Fimg%252Fbath_parents.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 0.77s;">
+                       <h2 class="ng-binding">Elternbad</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card light-bg in" style="transition-delay: 0.13s;" href="#/app/room/sz/Schlafzimmer/%252Fimg%252Fbett.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 0.9s;">
+                       <h2 class="ng-binding">Schlafzimmer</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card balanced-bg in" style="transition-delay: 0.13s;" href="#/app/room/fz/Fu%C3%9Fballzimmer/img%252Fvfb_wallpaper.jpg/img%252Ftorfabrik.jpg">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 1.04s;">
+                       <h2 class="ng-binding">Fußballzimmer</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms --><div ng-repeat="room in rooms" ui-sref="app.room({ roomId: room.id, roomLabel: room.label, roomBg: room.bg_room_img, roomAvatar: room.avatar })" class="card assertive-bg in" style="transition-delay: 0.13s;" href="#/app/room/treppe/Treppenhaus/%252Fimg%252Ftreppe-lampe.jpg/">
+                   <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse in in done" style="transition-delay: 1.18s;">
+                       <h2 class="ng-binding">Treppenhaus</h2>
+                       <!-- img src="{{room.bg_img}}" style="-webkit-transition-delay: 0.02s; transition-delay: 0.02s;" -->
+                   </a>
+               </div><!-- end ngRepeat: room in rooms -->
+           </div>
+    </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 725px;"></div></div></ion-content>
+</ion-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="right" is-enabled="true" width="275" class="menu menu-right" style="width: 275px;">
+        <ion-header-bar class="dark-bg expanded bar bar-header disable-user-behavior">
+            <span class="avatar" style="background: url(&#39;img/marvin.jpg&#39;); background-size: cover;"></span>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+            <ion-list class="disable-user-behavior"><div class="list">
+                <ion-item nav-clear="" menu-close="" ui-sref="app.qm4" class="item item-complex" href="#/app/qm4"><a class="item-content" ng-href="#/app/qm4" target="_self" href="saved_resource.html">
+                    Rooms
+                </a></ion-item>
+                <ion-item nav-clear="" menu-close="" ui-sref="app.flow" class="item item-complex" href="#/app/flow/"><a class="item-content" ng-href="#/app/flow/" target="_self" href="http://hsh-ui.local/#/app/flow/">
+                    Flows
+                </a></ion-item>
+                <ion-item nav-clear="" menu-close="" ui-sref="app.check" class="item item-complex" href="#/app/check"><a class="item-content" ng-href="#/app/check" target="_self" href="http://hsh-ui.local/#/app/check">
+                    Checks
+                </a></ion-item>
+                <ion-item nav-clear="" menu-close="" ui-sref="app.stats" class="item item-complex" href="#/app/stats"><a class="item-content" ng-href="#/app/stats" target="_self" href="http://hsh-ui.local/#/app/stats">
+                    Stats
+                </a></ion-item>
+                <ion-item nav-clear="" menu-close="" ui-sref="app.presence" class="item item-complex" href="#/app/presence"><a class="item-content" ng-href="#/app/presence" target="_self" href="http://hsh-ui.local/#/app/presence">
+                    Presence
+                </a></ion-item>
+                <ion-item nav-clear="" menu-close="" ui-sref="app.settings" class="item item-complex" href="#/app/settings"><a class="item-content" ng-href="#/app/settings" target="_self" href="http://hsh-ui.local/#/app/settings">
+                    Settings
+                </a></ion-item>
+            </div></ion-list>
+        </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 619px;"></div></div></ion-content>
+    </ion-side-menu>
+</ion-side-menus></ion-nav-view>
+
+
+<div class="backdrop"></div><div class="loading-container"><div class="loading"><div class="loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle></svg></div></div></div></body></html>
