@@ -9,6 +9,29 @@
 <meta name="description" content="TODO">
 <meta name="author" content="TODO">
 
+<script>
+var magentoHost = 'http://11.11.11.111';
+
+function goTo(id) {
+    var url; 
+    switch (id) {
+        case 'goToMagento':
+            url = magentoHost; 
+            break;
+        case 'goToZRayLive':
+            url = magentoHost + '/ZendServer/ZrayLive/';
+            break;
+         case 'goToZRayProduction':
+            url = magentoHost + '/ZendServer/Z-Ray/AccessMode/#panel=devbar-access';
+            break;    
+        default:
+    }
+    
+    document.getElementById(id).href = url; 
+    
+    return false;
+}
+</script>
 <style>
 .componentContainer {
     position: absolute;
@@ -506,7 +529,7 @@ transform: scale(0.3, 0.3)">
 -moz-transform: scale(1, 1);
 transform: scale(1, 1)">
 <div style="font-size: 36px;" class="antialias">
-<font>link: magento</font>
+<font><a id="goToMagento" href="#" target="_blank" onclick="goTo('goToMagento')">Go to Magento</a></font>
 </div>
 </div>
 </div>
@@ -597,7 +620,7 @@ transform: scale(1, 1)">
 -moz-transform: scale(1, 1);
 transform: scale(1, 1)">
 <div style="font-size: 36px;" class="antialias">
-<font>link: zray-live</font>
+<font><a id="goToZRayLive" href="#" target="_blank" onclick="goTo('goToZRayLive')">Go to Z-Ray Live</a></font>
 </div>
 </div>
 </div>
@@ -628,7 +651,7 @@ transform: scale(1, 1)">
 -moz-transform: scale(1, 1);
 transform: scale(1, 1)">
 <div style="font-size: 36px;" class="antialias">
-<font>link: zray-production</font>
+<font><a id="goToZRayProduction" href="#" target="_blank" onclick="goTo('goToZRayProduction')">Go to Z-Ray Production</a></font>
 </div>
 </div>
 </div>
