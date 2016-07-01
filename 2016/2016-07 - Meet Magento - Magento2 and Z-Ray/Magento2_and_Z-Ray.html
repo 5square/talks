@@ -23,7 +23,9 @@ function goTo(id) {
             break;
          case 'goToZRayProduction':
             url = magentoHost + '/ZendServer/Z-Ray/AccessMode/#panel=devbar-access';
-            break;    
+            break;   
+         case 'goToGallery':
+             url = magentoHost + '/ZendServer/Plugins/Gallery';
         default:
     }
     
@@ -511,7 +513,7 @@ transform: scale(1, 1)">
 -moz-transform: scale(1, 1);
 transform: scale(1, 1)">
 <div style="font-size: 36px;" class="antialias">
-<ul><li><span style="line-height: normal;">Installation: http://HOST/ZendServer -&gt; Gallery&nbsp;</span><br></li><li><span style="line-height: normal;">https://github.com/magento/magento2-zray</span></li></ul>
+<ul><li><span style="line-height: normal;">Installation: <a id="goToGallery" href="#" target="_blank" onclick="goTo('goToGallery')">http://HOST/ZendServer -&gt; Gallery&nbsp;</a></span><br></li><li><span style="line-height: normal;">https://github.com/magento/magento2-zray</span></li></ul>
 </div>
 </div>
 </div>
