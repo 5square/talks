@@ -1,0 +1,1396 @@
+
+<!-- saved from url=(0059)http://strut.io/editor/preview_export/impress.html#/step-31 -->
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Modernize your app with Zend Expressive</title>
+
+<meta name="description" content="TODO">
+<meta name="author" content="TODO">
+
+<style>
+.componentContainer {
+    position: absolute;
+    line-height: normal;
+    /*-webkit-transform-origin: 135% 135%;
+    -moz-transform-origin: 135% 135%;
+    transform-origin: 135% 135%;*/
+}
+
+.transformContainer {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="./Modernize_your_app_with_Zend_Expressive/default-reset.css">
+<link href="./Modernize_your_app_with_Zend_Expressive/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./Modernize_your_app_with_Zend_Expressive/default.css" id="theme">
+<link href="./Modernize_your_app_with_Zend_Expressive/web-fonts.css" rel="stylesheet" type="text/css">
+<link href="./Modernize_your_app_with_Zend_Expressive/backgroundClasses.css" rel="stylesheet" type="text/css">
+<link href="./Modernize_your_app_with_Zend_Expressive/surfaceClasses.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="http://strut.io/editor/preview_export/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="http://strut.io/editor/preview_export/apple-touch-icon.png" type="image/png">
+
+<style>
+.reveal.themedArea {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script async="" src="./Modernize_your_app_with_Zend_Expressive/analytics.js"></script><script type="text/javascript" src="./Modernize_your_app_with_Zend_Expressive/dataset-shim.js"></script>
+<script type="text/javascript" src="./Modernize_your_app_with_Zend_Expressive/impress.js"></script>
+
+<script src="./Modernize_your_app_with_Zend_Expressive/onready.js"></script>
+<script src="./Modernize_your_app_with_Zend_Expressive/loadPresentation.js"></script>
+<script>
+ready(function() {
+    if (document.getElementById('launched-placeholder'))
+        loadPresentation();
+
+    if (!window.presStarted) {
+        startPres(document, window);
+        impress().init();   
+    }
+
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = 
+            "<p>Tap on the left or right to navigate</p>";
+    }
+});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42322531-1', 'strut.io');
+    ga('send', 'pageview');
+    </script>
+</head>
+<body class="impress-supported impress-enabled" cz-shortcut-listen="true" style="height: 100%; overflow: hidden;">
+<style type="text/css">
+/*.example {
+	border: 4px groove orange;
+}*/
+.strut-surface .box {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.strut-surface .whatstheproblem {
+  background: rgba(221, 39, 0,0.7);
+}
+.strut-surface .whatdoyouwant {
+  background: rgba(16, 128, 212,0.7);
+}
+.strut-surface .zendexpressive {
+  background: rgba(177, 153, 110,0.7);
+}
+.strut-surface .goal {
+  background: rgba(95, 84, 79, 0.7);
+}
+.strut-surface .job {
+  background: rgba(42, 39, 34, 0.7);
+}
+.strut-surface .demo {
+  background: rgba(29, 70, 28, 0.7);
+}
+
+
+
+
+
+</style>
+<style>
+
+	
+	.bg-custom-296394 {
+		background: #296394;
+	}
+
+
+</style>
+<style>
+
+
+
+	
+		
+		
+		.slideContainer.strut-slide-0 {
+			background-image: url(http://i.imgur.com/tVDWPEz.png);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-3 {
+			background-image: url(http://i.imgur.com/m7pm8nE.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-9 {
+			background-image: url(http://i.imgur.com/U32GiqH.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-14 {
+			background-image: url(http://i.imgur.com/ald69pF.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-21 {
+			background-image: url(http://i.imgur.com/wgJVPtB.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-26 {
+			background-image: url(http://i.imgur.com/0Ue8Ei5.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-35 {
+			background-image: url(http://i.imgur.com/PnsENGI.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+		.slideContainer.strut-slide-40 {
+			background-image: url(http://i.imgur.com/PnsENGI.jpg);
+		}
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+</style>
+<!-- This is a work around / hack to get the user's browser to download the fonts 
+ if they decide to save the presentation. -->
+<div style="visibility: hidden; width: 0px; height: 0px">
+<img src="./Modernize_your_app_with_Zend_Expressive/Lato-Bold.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/HammersmithOne.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/Droid-Sans-Mono.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/Gorditas-Regular.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/FredokaOne-Regular.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/Ubuntu.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/Ubuntu-Bold.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/PressStart2P-Regular.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/Lato-BoldItalic.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/AbrilFatface-Regular.woff">
+<img src="./Modernize_your_app_with_Zend_Expressive/Lato-Regular.woff">
+</div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="bg  strut-surface">
+<div class="bg innerBg strut-slide-30">
+<div id="impress" style="position: absolute; transform-origin: left top 0px; transition: all 1000ms ease-in-out 500ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(3000px) scale(0.333333);"><div style="position: absolute; transform-origin: left top 0px; transition: all 1000ms ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(0deg) rotateY(0deg) rotateX(-29.7938deg) translate3d(-28603.7px, -12241.9px, 0px);">
+	
+		
+			<div class="step future" data-state="strut-slide-0" data-x="2457.6" data-y="2764.8" data-scale="3" id="step-1" style="position: absolute; transform: translate(-50%, -50%) translate3d(2457.6px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-1" data-x="6280.533333333334" data-y="2764.8" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(6280.53px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 140px; left: 129px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Modernize your app</font><br>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 454px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">with</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 444px; left: 197px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Zend Expressive</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-2" data-x="10103.466666666667" data-y="2764.8" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(10103.5px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 159px; left: 188px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font face="League Gothic, sans-serif" color="#ffffff">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @janatzend<br>jan.burkl@roguewave.com</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-3" data-x="2400" data-y="7000" data-scale="3" id="step-4" style="position: absolute; transform: translate(-50%, -50%) translate3d(2402.99px, 6912px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-3" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box whatstheproblem" style="top: 82px; left: 313px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">What's the problem?</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-4" data-x="2400" data-y="10000" data-rotate-x="30" data-scale="3" id="step-5" style="position: absolute; transform: translate(-50%, -50%) translate3d(2334.72px, 9922.56px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-4" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 313px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic"><font color="#296394">Old Application</font><br></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-5" data-x="2400" data-y="10700" data-rotate-x="30" data-scale="3" id="step-6" style="position: absolute; transform: translate(-50%, -50%) translate3d(2348.37px, 10690.6px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-5" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 304px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Huge Code Base</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-6" data-x="2400" data-y="11400" data-rotate-x="30" data-scale="3" id="step-7" style="position: absolute; transform: translate(-50%, -50%) translate3d(2375.68px, 11581.4px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-6" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 199px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Complex Business Logic</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-7" data-x="2400" data-y="12100" data-rotate-x="30" data-scale="3" id="step-8" style="position: absolute; transform: translate(-50%, -50%) translate3d(2430.29px, 12457px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-7" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 253px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Legacy Frameworks</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-8" data-x="2400" data-y="12800" data-rotate-x="30" data-scale="3" id="step-9" style="position: absolute; transform: translate(-50%, -50%) translate3d(2389.33px, 13286.4px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-8" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 408px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">No Time</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-9" data-x="8000" data-y="7000" data-scale="3" id="step-10" style="position: absolute; transform: translate(-50%, -50%) translate3d(8000.85px, 6927.36px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-9" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box whatdoyouwant" style="top: 515px; left: 35px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">What do you want?</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-10" data-x="8000" data-y="10000" data-rotate-x="30" data-scale="3" id="step-11" style="position: absolute; transform: translate(-50%, -50%) translate3d(8000.85px, 9646.08px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-10" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 323px; left: 176px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">The hottest JS Framework</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-11" data-x="8000" data-y="10700" data-rotate-x="30" data-scale="3" id="step-12" style="position: absolute; transform: translate(-50%, -50%) translate3d(7946.24px, 10629.1px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-11" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 340px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">(mobile) App</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-12" data-x="8000" data-y="11400" data-rotate-x="30" data-scale="3" id="step-13" style="position: absolute; transform: translate(-50%, -50%) translate3d(8000.85px, 11504.6px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-12" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 270px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">3rd Party Systems</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-13" data-x="8000" data-y="12100" data-rotate-x="30" data-scale="3" id="step-14" style="position: absolute; transform: translate(-50%, -50%) translate3d(7973.55px, 12549.1px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-13" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 468px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">API</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-14" data-x="13600" data-y="7000" data-scale="3" id="step-15" style="position: absolute; transform: translate(-50%, -50%) translate3d(14540.8px, 6912px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-14" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box zendexpressive" style="top: 65px; left: 31px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Zend Expressive</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-15" data-x="13600" data-y="10000" data-scale="3" id="step-16" style="position: absolute; transform: translate(-50%, -50%) translate3d(14581.8px, 9845.76px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-15" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 57px; left: 210px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./Modernize_your_app_with_Zend_Expressive/c28aOCa.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-16" data-x="13600" data-y="13000" data-scale="3" id="step-17" style="position: absolute; transform: translate(-50%, -50%) translate3d(14677.3px, 12733.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-16" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 83px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">The Application acts as an "onion"</font><br>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-17" data-x="13600" data-y="16000" data-scale="3" id="step-18" style="position: absolute; transform: translate(-50%, -50%) translate3d(14786.6px, 15790.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-17" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 203px; left: 222px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./Modernize_your_app_with_Zend_Expressive/6C4hS1h.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-18" data-x="18300" data-y="16000" data-rotate-y="90" data-scale="3" id="step-19" style="position: absolute; transform: translate(-50%, -50%) translate3d(18309.1px, 15774.7px, 0px) rotateX(0deg) rotateY(89.9544deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-18" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 237px; left: 145px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 48px;" class="antialias">
+<font color="#ffffff" face="League Gothic">"The terminology "pipeline" is often used <br>to describe the onion. One way of looking <br>at the "onion" is as a queue, which is <br>first-in-first-out (FIFO) in operation. <br>This means that the first middleware on <br>the queue is executed first, and this invokes <br>the next, and so on (and hence the "next" terminology). "<br></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 102px; left: 144px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Pipelines</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 705px; left: 474px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font color="#ffffff" face="League Gothic">https://zendframework.github.io/zend-expressive/getting-started/features/</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-19" data-x="13600" data-y="16000" data-scale="3" id="step-20" style="position: absolute; transform: translate(-50%, -50%) translate3d(14800.2px, 15820.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-19" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 203px; left: 222px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./Modernize_your_app_with_Zend_Expressive/6C4hS1h.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-20" data-x="13600" data-y="19000" data-scale="3" id="step-21" style="position: absolute; transform: translate(-50%, -50%) translate3d(14759.3px, 19138.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-20" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 148px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Zend Framwork 1, Symfony 1</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-21" data-x="19200" data-y="7000" data-scale="3" id="step-22" style="position: absolute; transform: translate(-50%, -50%) translate3d(21749.8px, 7096.32px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-21" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box goal" style="top: 486px; left: 583px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">The Goal</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-22" data-x="19200" data-y="10000" data-rotate-x="30" data-scale="3" id="step-23" style="position: absolute; transform: translate(-50%, -50%) translate3d(21818px, 9692.16px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-22" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 343px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Provide REST</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-23" data-x="19200" data-y="10700" data-rotate-x="30" data-scale="3" id="step-24" style="position: absolute; transform: translate(-50%, -50%) translate3d(21818px, 10337.3px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-23" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 190px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">No Legacy Code changes</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-24" data-x="19200" data-y="11400" data-rotate-x="30" data-scale="3" id="step-25" style="position: absolute; transform: translate(-50%, -50%) translate3d(21804.4px, 11228.2px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-24" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 300px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Pareto Principle</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-25" data-x="19200" data-y="12100" data-rotate-x="30" data-scale="3" id="step-26" style="position: absolute; transform: translate(-50%, -50%) translate3d(21859px, 12042.2px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-25" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 183px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Without losing Flexibility</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-26" data-x="24800" data-y="7000" data-scale="3" id="step-27" style="position: absolute; transform: translate(-50%, -50%) translate3d(28863.1px, 6835.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-26" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box job" style="top: 49px; left: 653px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">The Job</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-27" data-x="24800" data-y="10000" data-rotate-x="30" data-scale="3" id="step-28" style="position: absolute; transform: translate(-50%, -50%) translate3d(28863.1px, 9492.48px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-27" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 269px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">No Screen Scraper</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-28" data-x="24800" data-y="10900" data-rotate-x="30" data-scale="3" id="step-29" style="position: absolute; transform: translate(-50%, -50%) translate3d(28781.2px, 10552.3px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-28" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 228px; left: 331px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Rewrite Rules</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 355px; left: 347px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">2x index.php</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-29" data-x="24800" data-y="11800" data-rotate-x="30" data-scale="3" id="step-30" style="position: absolute; transform: translate(-50%, -50%) translate3d(28822.2px, 11351px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-29" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 324px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Routes for API</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step active present" data-state="strut-slide-30" data-x="24800" data-y="12500" data-rotate-x="30" data-scale="3" id="step-31" style="position: absolute; transform: translate(-50%, -50%) translate3d(28603.7px, 12241.9px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-30" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 211px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">View should not render</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step past" data-state="strut-slide-31" data-x="24800" data-y="13200" data-rotate-x="30" data-scale="3" id="step-32" style="position: absolute; transform: translate(-50%, -50%) translate3d(28740.3px, 13747.2px, 0px) rotateX(29.7938deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-31" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 324px; left: 202px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font face="League Gothic" color="#296394">Output Data Processing</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-32" data-x="30000" data-y="17500" data-rotate-z="-90" data-scale="3" id="step-33" style="position: absolute; transform: translate(-50%, -50%) translate3d(31457.3px, 17525.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(-89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-32" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 263px; left: 252px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Example: <br>ZF1-App MyTracking</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-33" data-x="33000" data-y="17500" data-rotate-z="-90" data-scale="3" id="step-34" style="position: absolute; transform: translate(-50%, -50%) translate3d(35594.2px, 17648.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(-89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-33" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 376px; left: 144px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font color="#ffffff" face="League Gothic"><ul><li>application/json -&gt; Zend Expressive<br></li><li>text/html -&gt; Legacy App<br></li></ul></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 229px; left: 436px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Route<br></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-34" data-x="36000" data-y="17500" data-rotate-z="-90" data-scale="3" id="step-35" style="position: absolute; transform: translate(-50%, -50%) translate3d(39512.7px, 17141.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(-89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-34" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 102px; left: 378px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Prep Work</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 270px; left: 61px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<ul><li><font color="#ffffff">composer: add Zend Expressive</font></li><li><font color="#ffffff">composer: add legacy-bridge</font><br></li><li><font color="#ffffff">legacy bridge config</font></li><li><font color="#ffffff">zf1-prereq</font></li></ul>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-35" data-x="39000" data-y="17500" data-rotate-z="-90" data-scale="3" id="step-36" style="position: absolute; transform: translate(-50%, -50%) translate3d(42448.2px, 17372.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(-89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-35" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box demo" style="top: 176px; left: 30px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Demo by Debugging</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-36" data-x="42000" data-y="17500" data-rotate-z="-90" data-scale="3" id="step-37" style="position: absolute; transform: translate(-50%, -50%) translate3d(45356.4px, 17126.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(-89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-36" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 354px; left: 65px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 48px;" class="antialias">
+<font color="#ffffff" face="League Gothic">https://bitbucket.org/account/user/janatzendteam/projects/ELM</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-37" data-x="42000" data-y="22000" data-rotate-z="90" data-scale="3" id="step-38" style="position: absolute; transform: translate(-50%, -50%) translate3d(45411px, 23761.9px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-37" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 263px; left: 231px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Example: <br>Symfony 1 App Jobeet</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+            
+			<div class="step future" data-state="strut-slide-38" data-x="39000" data-y="22000" data-rotate-z="90" data-scale="3" id="step-39" style="position: absolute; transform: translate(-50%, -50%) translate3d(42175.1px, 23685.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-38" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 331px; left: 225px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font color="#ffffff" face="League Gothic"><ul><li>^rest/(.*)$ expressive.php</li><li>^(.*)$ index.php</li></ul></font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 186px; left: 436px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Route<br></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-39" data-x="36000" data-y="22000" data-rotate-z="90" data-scale="3" id="step-40" style="position: absolute; transform: translate(-50%, -50%) translate3d(38966.6px, 23639px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-39" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 102px; left: 378px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Prep Work</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 270px; left: 61px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 64px;" class="antialias">
+<ul><li><font color="#ffffff">composer: add Zend Expressive</font></li><li><font color="#ffffff">composer: add legacy-bridge</font><br></li><li><font color="#ffffff">legacy bridge config</font></li><li><font color="#ffffff">sf1-prereq</font></li></ul>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-40" data-x="33000" data-y="22000" data-rotate-z="90" data-scale="3" id="step-41" style="position: absolute; transform: translate(-50%, -50%) translate3d(35553.3px, 23593px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-40" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer box demo" style="top: 176px; left: 30px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 96px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Demo by Debugging</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-41" data-x="30000" data-y="22000" data-rotate-z="90" data-scale="3" id="step-42" style="position: absolute; transform: translate(-50%, -50%) translate3d(32467.6px, 23562.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(89.9544deg) scale(3); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-41" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 354px; left: 75px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 48px;" class="antialias">
+<font color="#ffffff" face="League Gothic">https://bitbucket.org/account/user/janatzendteam/projects/EX</font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-42" data-x="30000" data-y="27000" data-scale="1" id="step-43" style="position: absolute; transform: translate(-50%, -50%) translate3d(33013.8px, 29245.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;">
+			<div class="bg-custom-296394 slideContainer strut-slide-42" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 169px; left: 250px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 144px;" class="antialias">
+<font color="#ffffff" face="League Gothic">Danke schön!</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 411px; left: 156px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 48px;" class="antialias">
+<div style="text-align: center;"><span style="color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;">jan@zend.com / @janatzend</span></div><font color="#ffffff" face="League Gothic"><div style="text-align: center;">github.com/janatzend/zend-expressive-legacy-bridge</div></font>
+</div>
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+	<div id="overview" class="step future" data-state="strut-slide-overview" data-x="23872.853333333333" data-y="16005.12" data-scale="30" style="position: absolute; transform: translate(-50%, -50%) translate3d(23872.9px, 16005.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(9); transform-style: preserve-3d;"></div>
+	
+</div></div>
+</div>
+</div></body></html>
