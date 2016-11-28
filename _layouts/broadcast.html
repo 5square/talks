@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <body>
+
+
+    <div id="st-container" class="st-container">
+
+    <!-- SIDEBAR / RESPONSIVE NAVIGATION End -->
+
+      <!-- content push wrapper -->
+      <div class="st-pusher">  
+
+        <div class="st-content"><!-- this is the wrapper for the content -->
+          <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+            <header id="page-header" data-0="opacity:1" data-300="opacity:0.3" data-scroll-index="0">
+              <div class="container">
+
+                <div class="page-nav">
+                    <a class="btn-back-home" href="/">Back to home</a>
+                </div>
+
+                <!-- SECTION HEADER -->
+                <div class="page-title section-header sh-left">
+                  <h1>
+                    <span>{{page.headline}}</span>
+                  </h1>
+                  <div class="header-desc">
+                    <span>Things I talk(ed) about.</span>
+                  </div>
+                </div>
+                <!-- SECTION HEADER End -->
+
+              </div>
+            </header>
+
+            <!-- PAGE CONTENT -->
+            <section class="page-content">
+              <div class="page-bg"></div>
+
+              <section class="section">
+                <div class="container">
+
+                  <div class="row">
+
+                    <!-- POSTS CONTAINER -->
+                    <div class="col-sm-12 col-md-9">
+
+                      {{ content }}
+
+                    </div>
+                    <!-- POSTS CONTAINER end -->
+
+                    <!-- SIDEBAR CONTAINER -->
+                    <div class="col-sm-12 col-md-3 sidebar">
+                      
+                      <!-- CATEGORIES WIDGET -->
+                      <div class="widget widget-categories">
+                        <h5 class="small-header">
+                          <span>Categories</span>
+                        </h5>
+                        
+                        <ul class="tag-box inline">
+						{% assign tags_list = site.categories %}  
+					      {% for tag in tags_list %} 
+                          {% if tag[0] != 'print' %}
+                          {% if tag[0] != 'online' %}
+							<li><a href="/{{ tag[0] }}/">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a></li>
+						  {% endif %}
+                          {% endif %}
+                          {% endfor %}
+						{% assign tags_list = nil %}
+						</ul>
+
+                      </div>  
+                      <!-- CATEGORIES WIDGET End -->
+                  
+                      <!-- POPULAR POSTS WIDGET -->
+                      <div class="widget widget-popular">
+                        <h5 class="small-header">
+                          <span>Popular</span>
+                        </h5>
+                        
+                        <ul>
+							{% for post in site.posts %}
+                            {% if post.tags contains 'popular' %}
+                            <li>
+                              <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
+                              <span class="post-info">{{ post.date | date_to_string }}</span>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        
+                      </div>  
+                      <!-- POPULAR POSTS WIDGET End -->
+
+                    </div>
+                    <!-- SIDEBAR CONTAINER End -->
+                  </div>
+
+                </div>
+              </section>
+
+            </section>
+            <!-- PAGE CONTENT End -->
+
+
+          </div><!-- /st-content-inner -->
+        </div><!-- /st-content -->
+      </div><!-- /st-pusher -->
+    </div><!-- /st-container -->
+    
+
+
+    </body>
+</html>
