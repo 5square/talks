@@ -1,6 +1,6 @@
 ---
 layout: post
-title: php.ruhr 2016, Dortmund, Germany
+title: PHP UG MRN, Mannheim, Germany
 tags: startpage
 fade: right
 ---
