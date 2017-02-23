@@ -1,0 +1,1356 @@
+{
+  "slides": [
+    {
+      "components": [],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 0,
+      "selected": false,
+      "active": false,
+      "background": "img:http://i.imgur.com/tVDWPEz.png",
+      "x": 180,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 129,
+          "y": 140,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Modernize your app</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 454,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">with</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 197,
+          "y": 444,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Zend Expressive</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 1,
+      "selected": false,
+      "active": false,
+      "x": 460,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 188,
+          "y": 159,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font face=\"League Gothic, sans-serif\" color=\"#ffffff\">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @janatzend<br>jan.burkl@roguewave.com</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 2,
+      "selected": false,
+      "active": false,
+      "x": 740,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 313,
+          "y": 82,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">What's the problem?</font>",
+          "selected": false,
+          "customClasses": "box whatstheproblem"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 3,
+      "selected": false,
+      "active": false,
+      "x": 176,
+      "y": 450,
+      "background": "img:http://i.imgur.com/m7pm8nE.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 313,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\"><font color=\"#296394\">Old Application</font><br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 4,
+      "selected": false,
+      "active": false,
+      "x": 171,
+      "y": 646,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 304,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Huge Code Base</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 5,
+      "selected": false,
+      "active": false,
+      "x": 172,
+      "y": 696,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 199,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Complex Business Logic</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 6,
+      "selected": false,
+      "active": false,
+      "x": 174,
+      "y": 754,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 253,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Legacy Frameworks</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 7,
+      "selected": false,
+      "active": false,
+      "x": 178,
+      "y": 811,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 408,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">No Time</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 8,
+      "selected": false,
+      "active": false,
+      "x": 175,
+      "y": 865,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 35,
+          "y": 515,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">What do you want?</font>",
+          "selected": false,
+          "customClasses": "box whatdoyouwant"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 9,
+      "selected": false,
+      "active": false,
+      "x": 586,
+      "y": 451,
+      "background": "img:http://i.imgur.com/U32GiqH.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 176,
+          "y": 323,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">The hottest JS Framework</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 10,
+      "selected": false,
+      "active": false,
+      "x": 586,
+      "y": 628,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 340,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">(mobile) App</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 11,
+      "selected": false,
+      "active": false,
+      "x": 582,
+      "y": 692,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 270,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">3rd Party Systems</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 12,
+      "selected": false,
+      "active": false,
+      "x": 586,
+      "y": 749,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 468,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">API</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 13,
+      "selected": false,
+      "active": false,
+      "x": 584,
+      "y": 817,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 31,
+          "y": 65,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Zend Expressive</font>",
+          "selected": false,
+          "customClasses": "box zendexpressive"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 14,
+      "selected": false,
+      "active": false,
+      "x": 1065,
+      "y": 450,
+      "background": "img:http://i.imgur.com/ald69pF.jpg"
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/c28aOCa.png",
+          "type": "Image",
+          "x": 210,
+          "y": 57,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 15,
+      "selected": false,
+      "active": false,
+      "x": 1068,
+      "y": 641
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 112,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">The Application acts as an \"onion\"</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 16,
+      "selected": false,
+      "active": false,
+      "x": 1075,
+      "y": 829
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/6C4hS1h.png",
+          "type": "Image",
+          "x": 222,
+          "y": 203,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 17,
+      "selected": false,
+      "active": false,
+      "x": 1083,
+      "y": 1028
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 145,
+          "y": 237,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">\"The terminology \"pipeline\" is often used <br>to describe the onion. One way of looking <br>at the \"onion\" is as a queue, which is <br>first-in-first-out (FIFO) in operation. <br>This means that the first middleware on <br>the queue is executed first, and this invokes <br>the next, and so on (and hence the \"next\" terminology). \"<br></font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 144,
+          "y": 102,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Pipelines</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 474,
+          "y": 705,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">https://zendframework.github.io/zend-expressive/getting-started/features/</font>",
+          "selected": false
+        }
+      ],
+      "z": null,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 1.57,
+      "rotateZ": 0,
+      "index": 18,
+      "selected": false,
+      "active": false,
+      "x": 1341,
+      "y": 1027
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/6C4hS1h.png",
+          "type": "Image",
+          "x": 222,
+          "y": 203,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 19,
+      "selected": false,
+      "active": false,
+      "x": 1084,
+      "y": 1030
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 148,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Zend Framwork 1, Symfony 1</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 20,
+      "selected": false,
+      "active": false,
+      "x": 1081,
+      "y": 1246
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 583,
+          "y": 486,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">The Goal</font>",
+          "selected": false,
+          "customClasses": "box goal"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 21,
+      "selected": false,
+      "active": false,
+      "x": 1593,
+      "y": 462,
+      "background": "img:http://i.imgur.com/wgJVPtB.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 343,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Provide REST</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 22,
+      "selected": false,
+      "active": false,
+      "x": 1598,
+      "y": 631,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 190,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">No Legacy Code changes</font>",
+          "selected": true
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 23,
+      "selected": false,
+      "active": true,
+      "x": 1598,
+      "y": 673,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 300,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Pareto Principle</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 24,
+      "selected": false,
+      "active": false,
+      "x": 1597,
+      "y": 731,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 183,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Without losing Flexibility</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 25,
+      "selected": false,
+      "active": false,
+      "x": 1601,
+      "y": 784,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 653,
+          "y": 49,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">The Job</font>",
+          "selected": false,
+          "customClasses": "box job"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 26,
+      "selected": false,
+      "active": false,
+      "x": 2114,
+      "y": 445,
+      "background": "img:http://i.imgur.com/0Ue8Ei5.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 269,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">No Screen Scraper</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 27,
+      "selected": false,
+      "active": false,
+      "x": 2114,
+      "y": 618,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 331,
+          "y": 228,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Rewrite Rules</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 347,
+          "y": 355,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">2x index.php</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 28,
+      "selected": false,
+      "active": false,
+      "x": 2108,
+      "y": 687,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 324,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Routes for API</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 29,
+      "selected": false,
+      "active": false,
+      "x": 2111,
+      "y": 739,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 211,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">View should not render</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 30,
+      "selected": false,
+      "active": false,
+      "x": 2095,
+      "y": 797,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 202,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Output Data Processing</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.52,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 31,
+      "selected": false,
+      "active": false,
+      "x": 2105,
+      "y": 895,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 252,
+          "y": 263,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Example: <br>ZF1-App MyTracking</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": -1.57,
+      "index": 32,
+      "selected": false,
+      "active": false,
+      "x": 2304,
+      "y": 1141,
+      "background": "bg-custom-296394"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 144,
+          "y": 376,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\"><ul><li>application/json -&gt; Zend Expressive<br></li><li>text/html -&gt; Legacy App<br></li></ul></font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 436,
+          "y": 229,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Route<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": -1.57,
+      "index": 33,
+      "selected": false,
+      "active": false,
+      "x": 2607,
+      "y": 1149,
+      "background": "bg-custom-296394"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 378,
+          "y": 102,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Prep Work</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 61,
+          "y": 270,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 64,
+          "text": "<ul><li><font color=\"#ffffff\">composer: add Zend Expressive</font></li><li><font color=\"#ffffff\">composer: add legacy-bridge</font><br></li><li><font color=\"#ffffff\">legacy bridge config</font></li><li><font color=\"#ffffff\">zf1-prereq</font></li></ul>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": -1.57,
+      "index": 34,
+      "selected": false,
+      "active": false,
+      "x": 2894,
+      "y": 1116,
+      "background": "bg-custom-296394"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 30,
+          "y": 176,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Demo by Debugging</font>",
+          "selected": false,
+          "customClasses": "box demo"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": -1.57,
+      "index": 35,
+      "selected": false,
+      "active": false,
+      "x": 3109,
+      "y": 1131,
+      "background": "img:http://i.imgur.com/PnsENGI.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 65,
+          "y": 354,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">https://bitbucket.org/account/user/janatzendteam/projects/ELM</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": -1.57,
+      "index": 36,
+      "selected": false,
+      "active": false,
+      "x": 3322,
+      "y": 1115
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 231,
+          "y": 263,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Example: <br>Symfony 1 App Jobeet</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 1.57,
+      "index": 37,
+      "selected": false,
+      "active": false,
+      "x": 3326,
+      "y": 1547
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 225,
+          "y": 331,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\"><ul><li>^rest/(.*)$ expressive.php</li><li>^(.*)$ index.php</li></ul></font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 436,
+          "y": 186,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Route<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 1.57,
+      "index": 38,
+      "selected": false,
+      "active": false,
+      "x": 3089,
+      "y": 1542
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 378,
+          "y": 102,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Prep Work</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 61,
+          "y": 270,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 64,
+          "text": "<ul><li><font color=\"#ffffff\">composer: add Zend Expressive</font></li><li><font color=\"#ffffff\">composer: add legacy-bridge</font><br></li><li><font color=\"#ffffff\">legacy bridge config</font></li><li><font color=\"#ffffff\">sf1-prereq</font></li></ul>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 1.57,
+      "index": 39,
+      "selected": false,
+      "active": false,
+      "x": 2854,
+      "y": 1539
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 30,
+          "y": 176,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Demo by Debugging</font>",
+          "selected": false,
+          "customClasses": "box demo"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 1.57,
+      "index": 40,
+      "selected": false,
+      "active": false,
+      "x": 2604,
+      "y": 1536,
+      "background": "img:http://i.imgur.com/PnsENGI.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 75,
+          "y": 354,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">https://bitbucket.org/account/user/janatzendteam/projects/EX</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 1.57,
+      "index": 41,
+      "selected": false,
+      "active": false,
+      "x": 2378,
+      "y": 1534
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 250,
+          "y": 169,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Danke schön!</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 156,
+          "y": 411,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">jan@zend.com / @janatzend</span></div><font color=\"#ffffff\" face=\"League Gothic\"><div style=\"text-align: center;\">github.com/janatzend/zend-expressive-legacy-bridge</div></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 1,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 42,
+      "selected": false,
+      "active": false,
+      "x": 2418,
+      "y": 1904
+    }
+  ],
+  "background": "bg-custom-296394",
+  "activeSlide": {
+    "components": [
+      {
+        "TextBox": {},
+        "x": 190,
+        "y": 324,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "type": "TextBox",
+        "size": 96,
+        "text": "<font face=\"League Gothic\" color=\"#296394\">No Legacy Code changes</font>",
+        "selected": true
+      }
+    ],
+    "z": 0,
+    "impScale": 3,
+    "rotateX": 0.52,
+    "rotateY": 0,
+    "rotateZ": 0,
+    "index": 23,
+    "selected": false,
+    "active": true,
+    "x": 1598,
+    "y": 673,
+    "background": "bg-transparent"
+  },
+  "fileName": "presentation-3",
+  "customStylesheet": "/*.example {\n\tborder: 4px groove orange;\n}*/\n.strut-surface .box {\n  padding-left: 60px;\n  padding-right: 60px;\n}\n.strut-surface .whatstheproblem {\n  background: rgba(221, 39, 0,0.7);\n}\n.strut-surface .whatdoyouwant {\n  background: rgba(16, 128, 212,0.7);\n}\n.strut-surface .zendexpressive {\n  background: rgba(177, 153, 110,0.7);\n}\n.strut-surface .goal {\n  background: rgba(95, 84, 79, 0.7);\n}\n.strut-surface .job {\n  background: rgba(42, 39, 34, 0.7);\n}\n.strut-surface .demo {\n  background: rgba(29, 70, 28, 0.7);\n}\n\n\n\n\n",
+  "deckVersion": "1.0",
+  "customBackgrounds": {
+    "bgs": [
+      {
+        "klass": "bg-custom-296394",
+        "style": "#296394"
+      }
+    ]
+  },
+  "overviewX": 1748.5,
+  "overviewY": 1042
+}
