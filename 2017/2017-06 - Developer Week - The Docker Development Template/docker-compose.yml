@@ -10,4 +10,4 @@ services:
     image: astefanutti/decktape
     volumes:
       - .:/slides
-    command: The_Docker_Development_Template.html The_Docker_Development_Template.pdf
+    command: -s 1024x768 The_Docker_Development_Template.html x.pdf
