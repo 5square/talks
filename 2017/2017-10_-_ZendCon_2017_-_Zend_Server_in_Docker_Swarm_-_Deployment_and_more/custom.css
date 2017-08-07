@@ -1,0 +1,17 @@
+.reveal section img.nobg {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
+
+.reveal section img.whiteborder {
+  background: white;
+  padding: 1em;
+  border: 0;
+}
+
+.reveal pre code {
+  font-size: 150%;
+  padding: 1em;
+  line-height: 1.2;
+}

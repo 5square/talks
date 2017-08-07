@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Developing web APIs using middleware in PHP 7, ApiConf 2017</title>
+
+        <meta name="description" content="Zend Server in Docker Swarm: Deployment and More ">
+        <meta name="author" content="Jan Burkl">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/css/reveal.css">
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/css/theme/sky.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/lib/css/zenburn.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./custom.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../../lib/reveal.js-3.5.0/css/print/pdf.css' : '../../lib/reveal.js-3.5.0/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body style="background-image: url('./images/background.png'); color: #EEEEEE;">
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- Slides -->
+<!-- ----------------------------------------------------------------------- -->
+
+<section>
+  <h3>Zend Server in Docker Swarm: <br>Deployment and More </h3>
+  <p>
+    <small>
+      Jan Burkl<br />
+      <i>Solution Consulting Manager</i><br />
+      <a href="http://www.roguewave.com">Rogue Wave Software
+    </small>
+    <br />
+    <br />
+    <small>
+      <a href="http://www.zendcon.com">ZendCon 2017</a>, Las Vegas, October 26th 2017
+    </small>
+  </p>
+  <p><img src="./images/zend-roguewave-logo.png" class="nobg" width="500"></p>
+</section>
+
+<section data-background="./images/particulum-mobile.png">
+</section>
+
+<section>
+  <section>
+    <h2>Docker</h2>
+  </section>
+
+  <section>
+    <h3>Dockerfile (Prod)</h3>
+    <pre><code data-trim lang="docker">
+FROM php:7.0-fpm
+
+RUN apt-get update && apt-get install -y git libcurl4-gnutls-dev zlib1g-dev libicu-dev g++ libxml2-dev libpq-dev \
+ && git clone -b php7 https://github.com/phpredis/phpredis.git /usr/src/php/ext/redis \
+ && docker-php-ext-install redis \
+ && apt-get autoremove && apt-get autoclean \
+ && rm -rf /var/lib/apt/lists/*
+
+#-------------------------------------------------------------------------------
+# App sources
+#-------------------------------------------------------------------------------
+COPY . /app/
+    </code></pre>
+
+  </section>
+
+  <section>
+    <h3>Dockerfile (Dev)</h3>
+    <pre><code data-trim lang="docker">
+FROM janatzend/particulum-mobile-backend
+
+WORKDIR /
+ADD http://www.zend.com/en/download/4843?start=true /zend-debugger
+RUN \
+  echo zend_extension=/zend-debugger/ZendDebugger-linux-x86_64/php-7.0.x/ZendDebugger.so >> /usr/local/etc/php/php.ini && \
+  echo zend_debugger.allow_from_all=1 >> /usr/local/etc/php/php.ini
+    </code></pre>
+
+  </section>
+
+  <section>
+    <p><img src="./images/Docker2.png" width="700" class="nobg"></p>
+  </section>
+
+  <section>
+    <h3>Redis Container</h3>
+      <pre><code data-trim lang="cli">
+$ docker run -d --name redis redis:3.2.7-alpine
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>PHP container</h3>
+      <pre><code data-trim lang="cli">
+$ docker run -d --name php \
+    -v "$PWD:/app" \
+    --link redis:redis \
+    particulummobile-dev/backend
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Nginx Container</h3>
+      <pre><code data-trim lang="cli">
+$ docker run -d --name nginx \
+    -v "$PWD:/app" \
+    -v "$PWD/etc/nginx.site.conf:/etc/nginx/conf.d/default.conf" \
+    --link php:backend-entry-point \
+    -p 8888:80 \
+    particulummobile-dev/backend-nginx
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Docker Compose</h2>
+  </section>
+
+  <section>
+    <pre><code data-trim lang="yaml">
+version: "3"
+
+services:
+
+#-------------------------------------------------------------------------------
+# Nginx
+#-------------------------------------------------------------------------------
+  nginx:
+    build:
+      context: "${PROJECTS_PATH}/${BACKEND_APP_DIR}"
+      dockerfile: Dockerfile.nginx
+    image: particulummobile-dev/backend-nginx
+    volumes:
+      - "${PROJECTS_PATH}/${BACKEND_APP_DIR}/etc/nginx.site.conf:/etc/nginx/conf.d/default.conf"
+      - "${PROJECTS_PATH}/${BACKEND_APP_DIR}:/app"
+    environment:
+      - TCP_PORTS=80,10081
+      - EXCLUDE_PORTS=443,10082
+      - EXTRA_SETTINGS=capture request header origin len 128,http-response add-header Access-Control-Allow-Origin %[capture.req.hdr(0)] if { capture.req.hdr(0) -m found },rspadd Access-Control-Allow-Headers:\ Origin\,\ X-Requested-With\,\ Content-Type\,\ Accept  if { capture.req.hdr(0) -m found }
+    networks:
+      backend-net:
+
+#-------------------------------------------------------------------------------
+# php-fpm
+#-------------------------------------------------------------------------------
+  php:
+    build:
+      context: "${PROJECTS_PATH}/${BACKEND_APP_DIR}"
+      dockerfile: Dockerfile.dev.vanilla-php
+    image: particulummobile-dev/backend
+    labels:
+      com.roguewave.particulummobile.description: "Zend Expressive Backend for Particulum Mobile app"
+      com.roguewave.particulummobile.service: "particulum-mobile-backend"
+    volumes:
+      - "${PROJECTS_PATH}/${BACKEND_APP_DIR}:/app"
+    networks:
+      backend-net:
+        aliases:
+          - backend-entry-point
+
+#-------------------------------------------------------------------------------
+# Redis
+#-------------------------------------------------------------------------------
+  redis:
+    image: redis:3.2.7-alpine
+    networks:
+      backend-net:
+
+networks:
+  backend-net:
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Scaling</h3>
+<pre><code data-trim lang="cli">$ docker-compose scale php=5
+</code></pre>
+    <p>Load Balancer?</p>
+  </section>
+
+
+</section>
+
+<section>
+  <section>
+    <h2>Docker Swarm (Mode)</h2>
+    <blockquote cite="https://docs.docker.com/engine/swarm/">
+      “Current versions of Docker include swarm mode for natively managing a cluster of Docker Engines called a swarm. Use the Docker CLI to create a swarm, deploy application services to a swarm, and manage swarm behavior.”
+    </blockquote>
+  </section>
+
+  <section>
+    <h3>cloud.docker.com</h3>
+    <ul>
+      <li>Beta</li>
+      <li>Service Provider
+        <ul>
+          <li>AWS</li>
+          <li>Azure</li>
+          <li>On Premise</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h3>play-with-docker.com</h3>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+### My local Setup
+  - VirtualBox
+  - Vagrant
+  - 3 Nodes
+  - Ubuntu 16
+    </textarea>
+  </section>
+
+  <section>
+    <h3>Init / Manager</h3>
+<pre><code data-trim lang="cli">
+  $ docker swarm init --advertise-addr 192.168.99.121
+</code></pre>
+  </section>
+
+  <section>
+<pre><code data-trim lang="cli">
+  Swarm initialized: current node (bvz81updecsj6wjz393c09vti) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join \
+    --token SWMTKN-1-3pu6hszjas19xyp7ghgosyx9k8atbfcr8p2is99znpy26u2lkl-1awxwuwd3z9j1z3puu7rcgdbx \
+    172.17.0.2:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+</code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Services</h2>
+  </section>
+
+  <section data-background-image="https://github.com/dockersamples/docker-swarm-visualizer/raw/master/nodes.png">
+    <h3 style="color: white;">Example: <br />Docker Swarm Visualizer</h3>
+    <small style="color: white">https://github.com/dockersamples/docker-swarm-visualizer</small>
+  </section>
+
+  <section>
+    <h2>Create Service</h2>
+<pre><code data-trim lang="cli">
+  $ docker service create \
+    --name=viz \
+    --publish=8080:8080/tcp \
+    --constraint=node.role==manager \
+    --mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+    dockersamples/visualizer
+</code></pre>
+
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Routing Mesh</h2>
+    <blockquote cite="https://docs.docker.com/engine/swarm/ingress/">
+      “The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node.”
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Ingress Network</h2>
+    <p><img src="https://docs.docker.com/engine/swarm/images/ingress-routing-mesh.png" width="800"></p>
+    <small>https://docs.docker.com/engine/swarm/ingress/</small>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Building images</h2>
+    <p>self-contained</p>
+  </section>
+
+  <section>
+    <h3>Makefile</h3>
+    <pre><code data-external="https://bitbucket.org/janatzendteam/particulum-mobile-backend/raw/master/Makefile">
+    </code></pre>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+### CI aaS
+  - Codehip
+  - Wercker
+  - Codefresh
+  - etc...
+    </textarea>
+  </section>
+  <section data-background-video="https://s3.eu-central-1.amazonaws.com/stuttgart-office-files/vault/video/particulum-mobile--codeship-docker-wercker.mp4" data-background-video-loop data-background-video-muted>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2><span style="text-decoration: line-through;">App Services</span><br />Docker Compose v3</h2>
+  </section>
+
+  <section>
+    <pre><code data-external="https://bitbucket.org/janatzendteam/particulum-mobile-master/raw/master/docker-compose.prod.swarm.vanilla-php.yml" data-trim lang="YAML">
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Zend Server</h2>
+    <p>https://github.com/janatzend/docker-zendserver</p>
+  </section>
+
+  <section>
+    <h3>Helpers</h3>
+    <p>/run.sh</p>
+    <pre><code lang="cli">
+source /shell_functions.rc
+
+trap "remove_from_cluster; exit" SIGINT SIGTERM SIGHUP
+    </code></pre>
+  </section>
+
+  <section>
+    <h2>Web API</h2>
+    <p>./etc/shell_functions.rc</p>
+    <pre><code lang="Bash">
+WEB_API_KEY=docker
+WEB_API_SECRET=$(cat /webapi/secret)
+
+ZS_MANAGE=/usr/local/zend/bin/zs-manage
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Joining Cluster</h3>
+    <pre><code lang="cli">
+$ZS_MANAGE server-add-to-cluster \
+  -n $HOSTNAME \
+  -i $IP \
+  -o $DB_HOST:3306 -u $DB_USER -p $DB_PASS -d $DB_NAME \
+  -N $WEB_API_KEY -K $WEB_API_SECRET -s
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Leaving Cluster</h3>
+    <pre><code lang="cli">
+$ZS_MANAGE cluster-disable-server \
+  $SERVER_ID -N $WEB_API_KEY -K $WEB_API_SECRET -s
+
+$ZS_MANAGE cluster-remove-server \
+  $SERVER_ID -N $WEB_API_KEY -K $WEB_API_SECRET -f
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Config Import</h3>
+    <pre><code data-trim lang="cli">
+$ZS_CLIENT_A configurationImport \
+  --configFile="/zs_config.zip" \
+  --output-format="kv"
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Session Clustering</h3>
+    <img src="./images/sc_architecture.png" class="whiteborder">
+  </section>
+
+  <section>
+    <h3>Session Clustering</h3>
+    <pre><code lang="cli">
+$ZS_MANAGE store-directive \
+  -d 'session.save_handler' -v 'cluster' \
+  -N $WEB_API_KEY -K $WEB_API_SECRET
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Health Check</h3>
+    <pre><code lang="cli">
+$ZS_CLIENT clusterGetServerStatus \
+  --servers=$(cat /usr/local/zend/etc/conf.d/ZendGlobalDirectives.ini | grep zend.node_id | awk -F'=' '{print $2}') \
+  --zsurl="http://localhost:10081" \
+  --zskey=$WEB_API_KEY --zssecret=$WEB_API_SECRET \
+  --output-format=kv \
+  | grep status | grep OK || exit 1
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Updates</h2>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Benefits</h2>
+  </section>
+
+  <section>
+    <h3>Containers self-contained</h3>
+    <ul>
+      <li>Everything in VCS</li>
+      <li>Running in every Docker env</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Docker Compose</h3>
+    <p>Stack Deployment via YAML file</p>
+  </section>
+</section>
+
+<section>
+    <h2>DANKE SCHÖN</h2>
+    <p>Contact me: jan.burkl [at] roguewave.com</p>
+    <p>Follow me: <a href="https://twitter.com/janatzend">@janatzend</a></p>
+</section>
+
+            </div>
+
+        </div>
+
+        <script src="../../lib/reveal.js-3.5.0/lib/js/head.min.js"></script>
+        <script src="../../lib/reveal.js-3.5.0/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../../lib/reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/notes/notes.js', async: true },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
