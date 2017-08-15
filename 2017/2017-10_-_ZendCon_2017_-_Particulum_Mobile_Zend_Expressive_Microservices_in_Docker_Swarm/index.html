@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Particulum Mobile: Zend Expressive Microservices in Docker Swarm, ZendCon 2017</title>
+
+        <meta name="description" content="Zend Server in Docker Swarm: Deployment and More ">
+        <meta name="author" content="Jan Burkl">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/css/reveal.css">
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/css/theme/sky.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/lib/css/zenburn.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./custom.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../../lib/reveal.js-3.5.0/css/print/pdf.css' : '../../lib/reveal.js-3.5.0/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body style="background-image: url('./images/background.png'); color: #EEEEEE;">
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- Slides -->
+<!-- ----------------------------------------------------------------------- -->
+
+<section>
+  <h3>Particulum Mobile:<br>Zend Expressive Microservices in Docker Swarm</h3>
+  <p>
+    <small>
+      Jan Burkl<br />
+      <i>Solution Consulting Manager</i><br />
+      <a href="http://www.roguewave.com">Rogue Wave Software</a>
+    </small>
+    <br />
+    <br />
+    <small>
+      <a href="http://www.zendcon.com">ZendCon 2017</a>, Las Vegas, October 25th 2017
+    </small>
+  </p>
+  <p><img src="./images/zend-roguewave-logo.png" class="nobg" width="500"></p>
+</section>
+
+<section>
+  <section>
+    <h2>Zend Expressive</h2>
+  </section>
+
+  <section>
+		<h2>Expressive 2.0</h2>
+		<p>The PHP framework for Middleware applications</p>
+		<ul>
+			<li class="fragment">PSR-7 HTTP Message support (using <a href="https://github.com/zendframework/zend-diactoros">zend-diactoros</a>)</li>
+			<li class="fragment">Support of <i>lambda middleware</i> (PSR-15) and <i>double pass</i> ($request, $response, $next)</li>
+			<li class="fragment">Piping workflow (using <a href="https://github.com/zendframework/zend-stratigility">zend-stratigility</a>)</li>
+			<li class="fragment">Features: routing, dependency injection, templating, error handling</li>
+			<li class="fragment">Last release 2.0.3, 28th March 2017</li>
+		</ul>
+  </section>
+
+  <section>
+		<h2>Middleware</h2>
+		<p>A function that gets a request and generates a response</p>
+    <pre><code data-trim="" class="php">
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Interop\Http\ServerMiddleware\DelegateInterface;
+
+function (Request $request, DelegateInterface $next)
+{
+// doing something with $request...
+// for instance calling the delegate middleware $next
+$response = $next-&gt;process($request);
+// manipulate the $response
+return $response;
+}
+    </code></pre>
+    <small>This is called <i>lambda middleware</i>.</small>
+  </section>
+
+  <section>
+	  <h2>Installation</h2>
+  	<p>You can install Expressive 2.0 using <a href="https://getcomposer.org/">composer</a>:</p>
+    <pre><code data-trim="" class="shell">composer create-project zendframework/zend-expressive-skeleton api
+    </code></pre>
+  	<small>Choose the default options during the installation</small>
+  </section>
+
+  <section>
+	  <h2>Particulum Mobile</h2>
+  </section>
+
+  <section>
+    <h3>Perpetuum Mobile / Free Energy</h3>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/ePH6vkqAeB4?autoplay=1&start=21&end=60&loop=1&playlist=ePH6vkqAeB4" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section data-background="./images/particulum-mobile.png">
+  </section>
+
+  <section>
+    <p><a href="https://bitbucket.org/janatzendteam/particulum-mobile-backend">bitbucket.org/janatzendteam/particulum-mobile-backend</a></p>
+    <p><small><a href="https://bitbucket.org/janatzendteam/particulum-mobile-master">bitbucket.org/janatzendteam/particulum-mobile-master</a></small></p>
+  </section>
+</section>
+
+<section>
+  <section>
+  	<h2>Microservices</h2>
+    <blockquote cite="https://en.wikipedia.org/wiki/Microservices">
+      “[...] a collection of loosely coupled services.”
+    </blockquote>
+    <ul>
+			<li class="fragment">No Standard Definition</li>
+			<li class="fragment">No Specification</li>
+      <li class="fragment">Not specific to any Technology</li>
+		</ul>
+  </section>
+
+  <section>
+    <h2>Docker</h2>
+    <h3>Microservice Architectural Style</h3>
+    <blockquote cite="https://martinfowler.com/articles/microservices.html">
+      “[...] a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API”
+    </blockquote>
+  </section>
+
+  <section>
+    <p><img src="./images/particulum-mobile-single.png" width="600" class="nobg"></p>
+  </section>
+
+  <section>
+    <h3>Docker Compose</h3>
+    <pre><code data-external="https://bitbucket.org/janatzendteam/particulum-mobile-master/raw/master/docker-compose.dev.single.vanilla-php.yml" data-trim lang="YAML">
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Docker Swarm (Mode)</h2>
+    <blockquote cite="https://docs.docker.com/engine/swarm/">
+      “Current versions of Docker include swarm mode for natively managing a cluster of Docker Engines called a swarm. Use the Docker CLI to create a swarm, deploy application services to a swarm, and manage swarm behavior.”
+    </blockquote>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+### My local Setup
+  - VirtualBox
+  - Vagrant
+  - 3 Nodes
+  - Ubuntu 16
+    </textarea>
+  </section>
+
+  <section>
+    <h3>Init / Manager</h3>
+    <pre><code data-trim lang="cli">
+$ docker swarm init --advertise-addr 192.168.99.121
+    </code></pre>
+  </section>
+
+  <section>
+    <pre><code data-trim lang="cli">
+Swarm initialized: current node (bvz81updecsj6wjz393c09vti) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join \
+    --token SWMTKN-1-3pu6hszjas19xyp7ghgosyx9k8atbfcr8p2is99znpy26u2lkl-1awxwuwd3z9j1z3puu7rcgdbx \
+    172.17.0.2:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+    </code></pre>
+  </section>
+
+  <section>
+    <h2>Routing Mesh</h2>
+    <blockquote cite="https://docs.docker.com/engine/swarm/ingress/">
+      “The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node.”
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Ingress Network</h2>
+    <p><img src="https://docs.docker.com/engine/swarm/images/ingress-routing-mesh.png" width="800"></p>
+    <small>https://docs.docker.com/engine/swarm/ingress/</small>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Deployment</h2>
+  </section>
+
+  <section>
+    <h3>Docker compose v3</h3>
+  </section>
+
+  <section>
+    <h3>Dev</h3>
+    <pre><code data-external="https://bitbucket.org/janatzendteam/particulum-mobile-master/raw/master/docker-compose.dev.single.vanilla-php.yml" data-trim lang="YAML">
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Prod</h3>
+    <pre><code data-external="https://bitbucket.org/janatzendteam/particulum-mobile-master/raw/master/docker-compose.prod.swarm.vanilla-php.yml" data-trim lang="YAML">
+    </code></pre>
+  </section>
+
+  <section>
+    <pre><code data-trim lang="cli">
+$ docker stack deploy --compose-file stack.yml pm
+    </code></pre>
+    <p>Install and Update</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Building (and pushing) images</h2>
+    <p>self-contained</p>
+  </section>
+
+  <section>
+    <h3>Build</h3>
+    <pre><code data-trim lang="cli">
+$ docker build -t particulum-mobile/backend .
+    </code></pre>
+  </section>
+
+  <section>
+    <h2>Docker-Compose</h2>
+    <p>builds images on-the-fly</p>
+  </section>
+
+  <section>
+    <h3>Makefile</h3>
+    <pre><code data-external="https://bitbucket.org/janatzendteam/particulum-mobile-backend/raw/master/Makefile">
+    </code></pre>
+  </section>
+
+  <section data-markdown>
+    <textarea data-template>
+### CI aaS
+  - (TravisCI)
+  - Codehip
+  - Wercker
+  - Codefresh
+  - etc...
+    </textarea>
+  </section>
+  <section data-background-video="https://s3.eu-central-1.amazonaws.com/stuttgart-office-files/vault/video/particulum-mobile--codeship-docker-wercker.mp4" data-background-video-loop data-background-video-muted>
+  </section>
+  <section>
+    <h2>Demo</h2>
+    <p>Particulum Mobile, Portainer, Visualizer</p>
+  </section>
+
+  <section>
+    <h3>Scalable Microservice</h3>
+    <p>Session Handling?</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>One Step beyond</h2>
+  </section>
+
+  <section>
+    <h3>What do we have?</h3>
+    <p><img src="./images/particulum-mobile-single.png" width="600" class="nobg"></p>
+  </section>
+
+  <section>
+    <h3>What do we want?</h3>
+    <p><img src="./images/particulum-mobile-single-micro.png" width="600" class="nobg"></p>
+  </section>
+
+  <section>
+    <h2>Why?</h2>
+  </section>
+
+  <section>
+    <p><img src="./images/swarm-no-micro.png" width="700" class="nobg"></p>
+  </section>
+
+  <section>
+    <h2>prioritization</h2>
+    <ul>
+      <li>Browser request limit</li>
+      <li>Request queueing on server side</li>
+    </ul>
+    <p>Just a Docker Compose file modification</p>
+  </section>
+
+  <section>
+    <h2>Benefits 1/2</h2>
+    <ul>
+      <li class="fragment">Docker Swarm (& Compose)
+        <ul class="fragment">
+          <li>See above ⬆</li>
+          <li>System Setup Config in VCS</li>
+          <li>Modular</li>
+          <li>Consistent Stack</li>
+        </ul>
+      </li>
+		</ul>
+  </section>
+
+  <section>
+    <h2>Benefits 2/2</h2>
+    <p>Expressive</p>
+    <ul class="fragment">
+      <li>Lightweight</li>
+      <li>No Framework Silo</li>
+      <li>Modular</li>
+      <li>Back to the Roots</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+    <h2>DANKE SCHÖN</h2>
+    <p>Contact me: jan.burkl [at] roguewave.com</p>
+    <p>Follow me: <a href="https://twitter.com/janatzend">@janatzend</a></p>
+</section>
+
+            </div>
+
+        </div>
+
+        <script src="../../lib/reveal.js-3.5.0/lib/js/head.min.js"></script>
+        <script src="../../lib/reveal.js-3.5.0/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: '../../lib/reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/notes/notes.js', async: true },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
