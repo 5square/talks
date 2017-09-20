@@ -3,10 +3,9 @@
 
     <head>
         <meta charset="utf-8">
-        <base href="../../lib/reveal.js-3.1.0/">
-        <title>Developing web APIs using middleware in PHP 7, ApiConf 2017</title>
+        <title>Middleware Web APIs in PHP 7.x</title>
 
-        <meta name="description" content="Developing web APIs using middleware in PHP 7">
+        <meta name="description" content="Middleware Web APIs in PHP 7.x">
         <meta name="author" content="Jan Burkl">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,21 +13,21 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/css/reveal.css">
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/css/theme/sky.css" id="theme">
 
         <!-- Code syntax highlighting -->
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="../../lib/reveal.js-3.5.0/lib/css/zenburn.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="./custom.css">
 
         <!-- Printing and PDF exports -->
         <script>
             var link = document.createElement( 'link' );
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../../lib/reveal.js-3.5.0/css/print/pdf.css' : '../../lib/reveal.js-3.5.0/css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
@@ -37,7 +36,7 @@
         <![endif]-->
     </head>
 
-    <body style="background-image: url('../../images/slides/2017-09_-_php_developer_day/background.png'); color: #EEEEEE;">
+    <body style="background-image: url('./images/background.png'); color: #EEEEEE;">
 
         <div class="reveal">
 
@@ -51,11 +50,11 @@
                             <a href="http://www.roguewave.com">Rogue Wave Software</small><br /><br />
                         <small><a href="http://phpug-dresden.org/phpdd17">php developer day 2017</a>, Dresden, 22nd September 2017</small>
                     </p>
-                    <p><img src="../../images/slides/2017-09_-_php_developer_day/zend-roguewave-logo.png" class="nobg" width="500"></p>
+                    <p><img src="./images/zend-roguewave-logo.png" class="nobg" width="500"></p>
                 </section>
 
                 <section>
-                    <p><img src="../../images/slides/2017-09_-_php_developer_day/php.png" class="nobg"></p>
+                    <p><img src="./images/php.png" class="nobg"></p>
                 </section>
 
                 <section>
@@ -74,13 +73,13 @@
                     <p class="fragment">Released: 3 December 2015</p>
                     <p class="fragment">Previous major was <a href="http://php.net/ChangeLog-5.php">PHP 5</a>, 13 July 2004</p>
                     <p class="fragment">Skipped PHP 6: Unicode failure</p>
-                    <p class="fragment">Last release is <a href="http://php.net/archive/2017.php#id2017-06-08-3">7.1.6</a> (8 Jun 2017)</p>
+                    <p class="fragment">Last release is <a href="http://php.net/archive/2017.php#id2017-08-03-3">7.1.8</a> (3 Aug 2017)</p>
                 </section>
 
 
                 <section>
                     <h2>PHP 7 performance</h2>
-                    <img src="../../images/slides/2017-09_-_php_developer_day/bench_lang.png" class="nobg">
+                    <img src="./images/bench_lang.png" class="nobg">
                     <small>PHP 7 is also faster than <a href="http://benchmarksgame.alioth.debian.org/u64q/php.html">Python 3</a>!</small>
                 </section>
 
@@ -140,18 +139,16 @@ echo memory_get_usage(true);
 
                 <section>
                         <h2>HTTP IN/OUT</h2>
-                        <p><img src="../../images/slides/2017-09_-_php_developer_day/webapp.png" class="nobg"></p>
+                        <p><img src="./images/webapp.png" class="nobg"></p>
                 </section>
 
                 <section>
-                    <h2>Example</h2>
+                    <h3>Example</h3>
                     <p>Request:</p>
-<pre><code data-trim>
-GET /api/version
+<pre><code data-trim>GET /api/version
 </code></pre>
                     <p>Response:</p>
-<pre><code data-trim>
-HTTP/1.1 200 OK
+<pre><code data-trim>HTTP/1.1 200 OK
 Connection: close
 Content-Length: 17
 Content-Type: application/json
@@ -165,8 +162,7 @@ Content-Type: application/json
                 <section>
                         <h2>Middleware</h2>
                         <p>A function that gets a request and generates a response</p>
-<pre><code data-trim class="php">
-use Psr\Http\Message\ServerRequestInterface as Request;
+<pre><code data-trim class="php">use Psr\Http\Message\ServerRequestInterface as Request;
 use Interop\Http\ServerMiddleware\DelegateInterface;
 
 function (Request $request, DelegateInterface $next)
@@ -183,8 +179,7 @@ function (Request $request, DelegateInterface $next)
 
                 <section>
                     <h2>DelegateInterface</h2>
-<pre><code data-trim class="php">
-namespace Interop\Http\ServerMiddleware;
+<pre><code data-trim class="php">namespace Interop\Http\ServerMiddleware;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -201,7 +196,7 @@ interface DelegateInterface
                 </section>
 
                 <section>
-                        <p><img src="../../images/slides/2017-09_-_php_developer_day/middleware_app.png" style="border-style:none;  padding: 25px; background: white;"></p>
+                        <p><img src="./images/middleware_app.png" style="border-style:none;  padding: 25px; background: white;"></p>
                 </section>
 
                 <section>
@@ -219,7 +214,8 @@ interface DelegateInterface
                 <section>
                     <h2>Installation</h2>
                     <p>You can install Expressive 2.0 using <a href="https://getcomposer.org/">composer</a>:</p>
-<pre><code data-trim class="shell">composer create-project zendframework/zend-expressive-skeleton api
+<pre><code data-trim class="shell">composer create-project \
+  zendframework/zend-expressive-skeleton api
 </code></pre></p>
                     <small>Choose the default options during the installation</small>
                 </section>
@@ -233,8 +229,7 @@ interface DelegateInterface
 
                 <section>
                     <h2>Routes</h2>
-<pre><code data-trim class="php">
-$app->get('/', App\Action\HomePageAction::class, 'home');
+<pre><code data-trim class="php">$app->get('/', App\Action\HomePageAction::class, 'home');
 $app->get('/api/ping', App\Action\PingAction::class, 'api.ping');
 </code></pre>
 <small>/config/routes.php</small>
@@ -242,8 +237,7 @@ $app->get('/api/ping', App\Action\PingAction::class, 'api.ping');
 
                 <section>
                     <h2>API Middleware</h2>
-<pre><code data-trim class="php">
-namespace App\Action;
+<pre><code data-trim class="php">namespace App\Action;
 
 use Interop\Http\ServerMiddleware\DelegateInterface;
 use Interop\Http\ServerMiddleware\MiddlewareInterface;
@@ -265,8 +259,7 @@ class PingAction implements MiddlewareInterface
 
                 <section>
                     <h2>Pipeline workflow</h2>
-<pre><code data-trim class="php">
-$app->pipe(ErrorHandler::class);
+<pre><code data-trim class="php">$app->pipe(ErrorHandler::class);
 $app->pipe(ServerUrlMiddleware::class);
 
 $app->pipeRoutingMiddleware();
@@ -283,8 +276,7 @@ $app->pipe(NotFoundHandler::class);
 
                 <section>
                     <h2>Service Container</h2>
-<pre><code data-trim class="php">
-use Zend\ServiceManager\Config;
+<pre><code data-trim class="php">use Zend\ServiceManager\Config;
 use Zend\ServiceManager\ServiceManager;
 
 $config = require __DIR__ . '/config.php';
@@ -300,8 +292,7 @@ return $container;
 
                 <section>
                     <h2>The Expressive app</h2>
-<pre><code data-trim class="php">
-chdir(dirname(__DIR__));
+<pre><code data-trim class="php">chdir(dirname(__DIR__));
 require 'vendor/autoload.php';
 
 call_user_func(function () {
@@ -319,8 +310,7 @@ call_user_func(function () {
 
                 <section>
                     <h2>Route a REST API</h2>
-<pre><code data-trim class="php">
-$app->route('/api/users[/{user-id}]', [
+<pre><code data-trim class="php">$app->route('/api/users[/{user-id}]', [
     Authentication\AuthenticationMiddleware::class,
     Authorization\AuthorizationMiddleware::class,
     Api\Action\UserAction::class
@@ -336,8 +326,7 @@ $app->delete('/api/users/{user-id}', ..., 'api.users.delete');
 
                 <section>
                     <h2>Rest Dispatch Trait</h2>
-<pre><code data-trim class="php">
-use Psr\Http\Message\ServerRequestInterface;
+<pre><code data-trim class="php">use Psr\Http\Message\ServerRequestInterface;
 use Interop\Http\ServerMiddleware\DelegateInterface;
 
 trait RestDispatchTrait
@@ -358,8 +347,7 @@ trait RestDispatchTrait
 
                 <section>
                     <h2>REST Middleware</h2>
-<pre><code data-trim class="php">
-class UserAction implements MiddlewareInterface
+<pre><code data-trim class="php">class UserAction implements MiddlewareInterface
 {
     use RestDispatchTrait;
 
@@ -380,20 +368,21 @@ class UserAction implements MiddlewareInterface
 
                 <section>
                     <h2>DANKE SCHÖN</h2>
+                    <p>Slides: http://5square.github.io/talks/</p>
                     <p>More info: <a href="https://framework.zend.com/blog">https://framework.zend.com/blog</a></p>
                     <p>Contact me: jan.burkl [at] roguewave.com</p>
                     <p>Follow me: <a href="https://twitter.com/janatzend">@janatzend</a></p>
                     <p>Credits: <a href="https://twitter.com/ezimuel">@ezimuel</a></p>
                     <p><small><br /><br />
-                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="../../images/slides/2017-09_-_php_developer_day/license.png" /></a><br />This work is licensed under a<br /> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />I used <a href="http://lab.hakim.se/reveal-js">reveal.js</a> to make this presentation.</small></p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="./images/license.png" /></a><br />This work is licensed under a<br /> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />I used <a href="http://lab.hakim.se/reveal-js">reveal.js</a> to make this presentation.</small></p>
                 </section>
 
             </div>
 
         </div>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
+        <script src="../../lib/reveal.js-3.5.0/lib/js/head.min.js"></script>
+        <script src="../../lib/reveal.js-3.5.0/js/reveal.js"></script>
 
         <script>
 
@@ -409,14 +398,14 @@ class UserAction implements MiddlewareInterface
 
                 // Optional reveal.js plugins
                 dependencies: [
-                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: 'plugin/zoom-js/zoom.js', async: true },
-                    { src: 'plugin/notes/notes.js', async: true },
-            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-
+                    { src: '../../lib/reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/notes/notes.js', async: true },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+                    { src: '../../lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                 ]
             });
 
