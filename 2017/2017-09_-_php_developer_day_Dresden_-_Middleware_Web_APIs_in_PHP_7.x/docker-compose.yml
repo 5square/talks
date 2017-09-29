@@ -1,0 +1,14 @@
+#-------------------------------------------------------------------------------
+# cmd to run: docker-compose run --rm decktape
+#-------------------------------------------------------------------------------
+
+version: "2"
+
+services:
+
+  decktape:
+    image: astefanutti/decktape
+    volumes:
+      - .:/slides
+      - ../../js:/js
+    command: -s 1024x768 index.html Middleware_Web_APIs_in_PHP_7.x.pdf
