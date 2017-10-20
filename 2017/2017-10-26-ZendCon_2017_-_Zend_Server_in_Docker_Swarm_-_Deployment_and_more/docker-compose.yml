@@ -1,0 +1,14 @@
+#-------------------------------------------------------------------------------
+# cmd to run: docker-compose run --rm decktape
+#-------------------------------------------------------------------------------
+
+version: "2"
+
+services:
+
+  decktape:
+    image: astefanutti/decktape
+    volumes:
+      - .:/slides
+      - ../../js:/js
+    command: -s 1024x768 index.html Zend_Server_in_Docker_Swarm_-_Deployment_and_more.pdf
