@@ -79,7 +79,7 @@
           },
           "type": "TextBox",
           "size": 72,
-          "text": "<font face=\"League Gothic, sans-serif\" color=\"#ffffff\">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @janatzend<br>jan.burkl@roguewave.com</font><br>",
+          "text": "<font face=\"League Gothic, sans-serif\" color=\"#ffffff\">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @5square_de<br>jan.burkl@roguewave.com</font><br>",
           "selected": false
         }
       ],
@@ -1295,7 +1295,7 @@
           },
           "type": "TextBox",
           "size": 48,
-          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">jan@zend.com / @janatzend</span></div><font color=\"#ffffff\" face=\"League Gothic\"><div style=\"text-align: center;\">github.com/janatzend/zend-expressive-legacy-bridge</div></font>",
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">jan@zend.com / @5square_de</span></div><font color=\"#ffffff\" face=\"League Gothic\"><div style=\"text-align: center;\">github.com/5square/zend-expressive-legacy-bridge</div></font>",
           "selected": false
         }
       ],

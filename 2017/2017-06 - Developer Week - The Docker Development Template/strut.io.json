@@ -53,7 +53,7 @@
           },
           "type": "TextBox",
           "size": 64,
-          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @janatzend<br>jan.burkl@roguewave.com<br></font>",
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @5square_de<br>jan.burkl@roguewave.com<br></font>",
           "selected": false
         }
       ],
@@ -1256,7 +1256,7 @@
           },
           "type": "TextBox",
           "size": 72,
-          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">jan@zend.com / @janatzend</span></div>",
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">jan@zend.com / @5square_de</span></div>",
           "selected": false
         },
         {
