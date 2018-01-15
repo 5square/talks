@@ -10,6 +10,6 @@ Unfortunately the public containers are normally not ready for an immediate use 
 
 In this session, I will show how to build your own custom system based on a Docker-compose template. This includes also the automatic setup of connections to other systems like DB servers or a load balancer to start a scalable cluster. And the best: The whole system configuration can be simply stored in a version control system, so that the Docker development template is available for all developers on the team.
 
-Slides: [online](http://janatzend.github.io/talks/2017/2017-06%20-%20Developer%20Week%20-%20The%20Docker%20Development%20Template/The_Docker_Development_Template.html) | [pdf](http://janatzend.github.io/talks/2017/2017-06%20-%20Developer%20Week%20-%20The%20Docker%20Development%20Template/The_Docker_Development_Template.pdf)
+Slides: [online](http://5square.github.io/talks/2017/2017-06%20-%20Developer%20Week%20-%20The%20Docker%20Development%20Template/The_Docker_Development_Template.html) | [pdf](http://5square.github.io/talks/2017/2017-06%20-%20Developer%20Week%20-%20The%20Docker%20Development%20Template/The_Docker_Development_Template.pdf)
 
 Sources: [Bitbucket](https://bitbucket.org/account/user/janatzendteam/projects/PAR)
