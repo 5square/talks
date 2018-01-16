@@ -13,11 +13,11 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="../../_assets/js/lib/reveal.js-3.5.0/css/reveal.css">
-        <link rel="stylesheet" href="../../_assets/js/lib/reveal.js-3.5.0/css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="../_assets/js/lib/reveal.js-3.5.0/css/reveal.css">
+        <link rel="stylesheet" href="../_assets/js/lib/reveal.js-3.5.0/css/theme/sky.css" id="theme">
 
         <!-- Code syntax highlighting -->
-        <link rel="stylesheet" href="../../_assets/js/lib/reveal.js-3.5.0/lib/css/zenburn.css">
+        <link rel="stylesheet" href="../_assets/js/lib/reveal.js-3.5.0/lib/css/zenburn.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./custom.css">
@@ -27,7 +27,7 @@
             var link = document.createElement( 'link' );
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? '../../_assets/js/lib/reveal.js-3.5.0/css/print/pdf.css' : '../../_assets/js/lib/reveal.js-3.5.0/css/print/paper.css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '../_assets/js/lib/reveal.js-3.5.0/css/print/pdf.css' : '../_assets/js/lib/reveal.js-3.5.0/css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
@@ -358,8 +358,8 @@ $ docker build -t particulum-mobile/backend .
 
         </div>
 
-        <script src="../../_assets/js/lib/reveal.js-3.5.0/lib/js/head.min.js"></script>
-        <script src="../../_assets/js/lib/reveal.js-3.5.0/js/reveal.js"></script>
+        <script src="../_assets/js/lib/reveal.js-3.5.0/lib/js/head.min.js"></script>
+        <script src="../_assets/js/lib/reveal.js-3.5.0/js/reveal.js"></script>
 
         <script>
 
@@ -375,14 +375,14 @@ $ docker build -t particulum-mobile/backend .
 
                 // Optional reveal.js plugins
                 dependencies: [
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/notes/notes.js', async: true },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
-                    { src: '../../_assets/js/lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/notes/notes.js', async: true },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+                    { src: '../_assets/js/lib/reveal.js-3.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                 ]
             });
 
