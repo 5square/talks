@@ -1,0 +1,7 @@
+web:
+  image: nginx:alpine
+  volumes:
+    - .:/app
+    - ./nginx.conf:/etc/nginx/conf.d/default.conf
+  ports:
+    - "8888:80"
