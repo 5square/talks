@@ -1,0 +1,2150 @@
+
+<!-- saved from url=(0059)http://strut.io/editor/preview_export/impress.html#/step-73 -->
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>PHP 7</title>
+
+<meta name="description" content="TODO">
+<meta name="author" content="TODO">
+
+<style>
+.componentContainer {
+    position: absolute;
+    line-height: normal;
+    /*-webkit-transform-origin: 135% 135%;
+    -moz-transform-origin: 135% 135%;
+    transform-origin: 135% 135%;*/
+}
+
+.transformContainer {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+a:link, a:visited, a:active, a:hover
+{
+color:#333
+}
+pre code {
+    padding: 20px !important;
+    font-size: 2em !important;
+    line-height: 1.1em !important;
+}
+
+</style>
+
+<link rel="stylesheet" href="./PHP7_files/default-reset.css">
+<link href="./PHP7_files/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./PHP7_files/default.css" id="theme">
+<link href="./PHP7_files/web-fonts.css" rel="stylesheet" type="text/css">
+<link href="./PHP7_files/backgroundClasses.css" rel="stylesheet" type="text/css">
+<link href="./PHP7_files/surfaceClasses.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="http://strut.io/editor/preview_export/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="http://strut.io/editor/preview_export/apple-touch-icon.png" type="image/png">
+
+<style>
+.reveal.themedArea {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script async="" src="./PHP7_files/analytics.js"></script><script type="text/javascript" src="./PHP7_files/dataset-shim.js"></script>
+<script type="text/javascript" src="./PHP7_files/impress.js"></script>
+
+<script src="./PHP7_files/onready.js"></script>
+<script src="./PHP7_files/loadPresentation.js"></script>
+
+<link rel="stylesheet" href="./PHP7_files/highlight/styles/default.css">
+<script src="./PHP7_files/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+ready(function() {
+    if (document.getElementById('launched-placeholder'))
+        loadPresentation();
+
+    if (!window.presStarted) {
+        startPres(document, window);
+        impress().init();
+    }
+
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML =
+            "<p>Tap on the left or right to navigate</p>";
+    }
+});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42322531-1', 'strut.io');
+    ga('send', 'pageview');
+    </script>
+
+<body class="impress-supported impress-enabled" style="height: 100%; overflow: hidden;">
+<style type="text/css">
+.strut-surface .box {
+  padding: 30px;
+  border: 2px solid;
+}
+
+.strut-surface .underline:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 1px solid white;
+}
+
+.strut-surface .box font {
+  color: white;
+}
+
+.strut-surface .box1 {
+  border-color: #005A8A;
+  background: rgba(13, 170, 255, 1);
+}
+
+.strut-surface .box1 svg{
+  fill: rgba(13, 170, 255, 1);
+
+}
+
+
+.strut-surface .box2 {
+  border-color: #A75B00;
+  background: rgba(255, 139, 0, 1);
+}
+.strut-surface .box2t {
+  border-color: #A75B00;
+  background: rgba(255, 139, 0, 0.5);
+}
+
+.strut-surface .box2t075 {
+  border-color: #A75B00;
+  background: rgba(255, 139, 0, 0.75);
+}
+
+.strut-surface .box2 svg{
+  fill: rgba(255, 139, 0, 1);
+}
+.strut-surface .box2t svg, .strut-surface .box2t075 svg{
+  fill: rgba(255, 139, 0, 0);
+
+}
+</style>
+<style>
+
+</style>
+<style>
+
+
+
+
+
+
+		.slideContainer.strut-slide-0 {
+			background-image: url(http://i.imgur.com/dq23iC1.jpg);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.slideContainer.strut-slide-20 {
+			background-image: url(http://i.imgur.com/2Prp92M.jpg);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.slideContainer.strut-slide-29 {
+			background-image: url(./PHP7_files/tagcloud.png);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.slideContainer.strut-slide-71 {
+			background-image: url(http://i.imgur.com/nIQHtxB.png);
+		}
+
+
+
+
+
+
+
+
+</style>
+<!-- This is a work around / hack to get the user's browser to download the fonts
+ if they decide to save the presentation. -->
+<div style="visibility: hidden; width: 0px; height: 0px">
+<img src="./PHP7_files/Lato-Bold.woff">
+<img src="./PHP7_files/HammersmithOne.woff">
+<img src="./PHP7_files/Droid-Sans-Mono.woff">
+<img src="./PHP7_files/Gorditas-Regular.woff">
+<img src="./PHP7_files/FredokaOne-Regular.woff">
+<img src="./PHP7_files/Ubuntu.woff">
+<img src="./PHP7_files/Ubuntu-Bold.woff">
+<img src="./PHP7_files/PressStart2P-Regular.woff">
+<img src="./PHP7_files/Lato-BoldItalic.woff">
+<img src="./PHP7_files/AbrilFatface-Regular.woff">
+<img src="./PHP7_files/Lato-Regular.woff">
+</div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="bg  strut-surface">
+<div class="bg innerBg strut-slide-72">
+<div id="impress" style="position: absolute; transform-origin: left top 0px; transition: all 1000ms ease-in-out 0ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(7000px) scale(0.142857);"><div style="position: absolute; transform-origin: left top 0px; transition: all 1000ms ease-in-out 500ms; transform-style: preserve-3d; transform: rotateZ(34.3775deg) rotateY(0deg) rotateX(37.2423deg) translate3d(-136724px, -20951px, 0px);">
+
+
+			<div class="step future" data-state="strut-slide-0" data-x="2457.6" data-y="2764.8" data-scale="3" id="step-1" style="position: absolute; transform: translate(-50%, -50%) translate3d(2457.6px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+
+			</div>
+
+			<div class="componentContainer box box2t075" style="top: 9px; left: 563px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 319.56px; height: 681.1px;">
+<div class="transformContainer" style="-webkit-transform: scale(, );
+-moz-transform: scale(, );
+transform: scale(, )">
+<svg height="681.1039074406758" width="319.56035883064965" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 50 50" preserveAspectRatio="none"><rect width="50" height="50"></rect></svg>
+</div>
+</div>
+
+			<div class="componentContainer underline" style="top: 81px; left: 586px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 86px;" class="antialias">
+<font color="#ffffff"><font face="Lato">Phast &amp;<br></font>Phurious</font><br>
+</div>
+</div>
+</div>
+
+<div class="componentContainer" style="top: 600px; left: 586px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 24px;" class="antialias">
+<font color="#ffffff"><font face="Lato">Jan Burkl<br>Zend Solution Consultant<br>jan@zend.com</font></font><br>
+</div>
+</div>
+</div>
+
+			<div class="componentContainer " style="top: 726px; left: 18px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 12px;" class="antialias">
+<font color="#ffffff" face="Lato">http://images-cdn.moviepilot.com/images/c_fill,h_1080,w_1920/t_mp_quality/ufju2q3yi5byarjwtqut/<br>the-fast-and-furious-franchise-in-it-s-true-chronological-order-tells-a-whole-new-story-347773.jpg</font>
+</div>
+</div>
+</div>
+
+			<div class="componentContainer " style="top: 368px; left: 640px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/QUITMDZ.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-1" data-x="7359.1466666666665" data-y="1764.8" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+			<div class="themedArea"><br><br><br><br>
+			<h1 id="evolution">EVOLUTION</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-2" data-x="7359.1466666666665" data-y="4254.72" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 4254.72px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="php-3-0">PHP 3.0</h2>
+<ul>
+<li>Released:  June 1998</li>
+<li>New Features:<ul>
+<li>Full fledged language</li>
+<li>Extensions</li>
+</ul>
+</li>
+<li>Performance Features:<ul>
+<li>Token Cache</li>
+<li>Memory Manager</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-3" data-x="7359.1466666666665" data-y="6236.16" data-scale="3" id="step-4" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 6236.16px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-3" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="php-4-0">PHP 4.0</h2>
+<ul>
+<li>Released:  May 2000</li>
+<li>New Features:<ul>
+<li>Modularity</li>
+<li>Sessions</li>
+<li>Downwards compatibility (!)</li>
+</ul>
+</li>
+<li>Performance Features:<ul>
+<li>Zend Engine</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-4" data-x="7359.1466666666665" data-y="8232.96" data-scale="3" id="step-5" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 8232.96px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-4" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="php-5">PHP 5</h2>
+<ul>
+<li>5.0:  July 2004<ul>
+<li>New Features:</li>
+<ul>
+<li>New “true“ object model</li>
+<li>Destructors</li>
+<li>Exception handling</li>
+</ul>
+</ul>
+</li>
+<li>Performance features<ul>
+<li>Be thankful it‘s not slower!</li>
+<li>Seeds were sown...</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-5" data-x="12397.226666666667" data-y="6835.2" data-rotate-x="49.847328176381616" data-scale="3" id="step-6" style="position: absolute; transform: translate(-50%, -50%) translate3d(12397.2px, 6835.2px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-5" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="php-performance-evolution">PHP Performance Evolution</h2>
+<h3 id="bench-php-lower-is-better-">bench.php (lower is better)</h3>
+
+			</div>
+
+			<div class="componentContainer " style="top: 129px; left: 60px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/MgLs4za.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-6" data-x="12383.573333333334" data-y="9692.16" data-rotate-x="49.847328176381616" data-scale="3" id="step-7" style="position: absolute; transform: translate(-50%, -50%) translate3d(12383.6px, 9692.16px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-6" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="putting-things-in-perspective">Putting Things in Perspective</h2>
+
+			</div>
+
+			<div class="componentContainer " style="top: 112px; left: 73px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/ShUNsak.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-7" data-x="7359.1466666666665" data-y="10291.2" data-scale="3" id="step-8" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 10291.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-7" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="php-6">PHP 6</h1>
+<h2 id="php-6-php-5-unicode">PHP 6 = PHP 5 + Unicode</h2>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-8" data-x="7359.1466666666665" data-y="12334.08" data-scale="3" id="step-9" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 12334.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-8" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="what-ended-up-happening">What Ended Up Happening</h2>
+<h3 id="bonus-roughly-doubled-memory-footprint-">Bonus:  Roughly doubled memory footprint.</h3>
+
+			</div>
+
+			<div class="componentContainer " style="top: 155px; left: 24px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/o16eNFY.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-9" data-x="7359.1466666666665" data-y="14453.76" data-scale="3" id="step-10" style="position: absolute; transform: translate(-50%, -50%) translate3d(7359.15px, 14453.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-9" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="the-end">THE End</h2>
+<h1 id="time-of-death">Time of Death</h1>
+<h2 id="march-11-2010">March 11, 2010</h2>
+<p><a href="http://bit.ly/php6whathappened">http://bit.ly/php6whathappened</a></p>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-10" data-x="13967.36" data-y="13393.92" data-scale="3" id="step-11" style="position: absolute; transform: translate(-50%, -50%) translate3d(13967.4px, 13393.9px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-10" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="php-7">PHP 7</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-11" data-x="13981.013333333334" data-y="14392.32" data-scale="3" id="step-12" style="position: absolute; transform: translate(-50%, -50%) translate3d(13981px, 14392.3px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-11" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="leading-up-to-php-7">Leading up to PHP 7</h2>
+<p>2012:
+Research PHP+JIT begins, led by Dmitry Stogov</p>
+<p>2014:
+No performance gains realized for real-world workloads</p>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-12" data-x="13981.013333333334" data-y="15037.44" data-scale="3" id="step-13" style="position: absolute; transform: translate(-50%, -50%) translate3d(13981px, 15037.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-12" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+
+			</div>
+
+			<div class="componentContainer " style="top: 156px; left: 233px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/Uc2LH4R.jpg">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-13" data-x="13981.013333333334" data-y="16896" data-scale="3" id="step-14" style="position: absolute; transform: translate(-50%, -50%) translate3d(13981px, 16896px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-13" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="birth-of-phpng">Birth of PHPNG</h2>
+
+			</div>
+
+			<div class="componentContainer " style="top: 83px; left: 9px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/YaSrv2N.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-14" data-x="13981.013333333334" data-y="19399.68" data-scale="3" id="step-15" style="position: absolute; transform: translate(-50%, -50%) translate3d(13981px, 19399.7px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-14" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="what-made-the-difference-">What Made the Difference?</h2>
+
+			</div>
+
+			<div class="componentContainer " style="top: 131px; left: -2px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/sEAmDiD.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-15" data-x="19524.266666666666" data-y="10613.76" data-scale="3" id="step-16" style="position: absolute; transform: translate(-50%, -50%) translate3d(19524.3px, 10613.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-15" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+				<br><br><br>
+				<h1 id="what-can-we-expect-">PHP 7</h1>
+			<h1 id="what-can-we-expect-">What can we expect?</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-16" data-x="19496.96" data-y="15820.8" data-scale="3" id="step-17" style="position: absolute; transform: translate(-50%, -50%) translate3d(19497px, 15820.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-16" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="5-6-vs-7-0">5.6 vs. 7.0</h2>
+
+			</div>
+
+			<div class="componentContainer " style="top: 150px; left: 4px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/CxlnEg4.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-17" data-x="19496.96" data-y="18478.08" data-scale="3" id="step-18" style="position: absolute; transform: translate(-50%, -50%) translate3d(19497px, 18478.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-17" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="real-world-application-benchmarks">Real World Application Benchmarks</h2>
+<p>(% improvement vs. PHP 5.6)</p>
+
+			</div>
+
+			<div class="componentContainer " style="top: 155px; left: 21px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/NJYaRLA.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-18" data-x="19496.96" data-y="21089.28" data-scale="3" id="step-19" style="position: absolute; transform: translate(-50%, -50%) translate3d(19497px, 21089.3px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-18" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="it-s-gotten-consistently-faster-with-more-to-come-">It’s gotten consistently faster with more to come!</h2>
+
+			</div>
+
+			<div class="componentContainer " style="top: 140px; left: 21px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./PHP7_files/UAhUUVW.png">
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-19" data-x="19496.96" data-y="23715.84" data-scale="3" id="step-20" style="position: absolute; transform: translate(-50%, -50%) translate3d(19497px, 23715.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-19" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="more-performance-info">More Performance Info</h2>
+<ul>
+<li><a href="http://bit.ly/php7perf">http://bit.ly/php7perf</a></li>
+<li><a href="http://bit.ly/php7fast">http://bit.ly/php7fast</a></li>
+<li><a href="http://bit.ly/php7mandel">http://bit.ly/php7mandel</a></li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-20" data-x="24494.08" data-y="10583.04" data-scale="3" id="step-21" style="position: absolute; transform: translate(-50%, -50%) translate3d(24494.1px, 10583px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-20" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+
+			</div>
+
+			<div class="componentContainer box box1" style="top: 19px; left: 116px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 327.84px; height: 659.97px;">
+<div class="transformContainer" style="-webkit-transform: scale(, );
+-moz-transform: scale(, );
+transform: scale(, )">
+<svg height="659.9733746613933" width="327.838561850939" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 50 50" preserveAspectRatio="none"><rect width="50" height="50"></rect></svg>
+</div>
+</div>
+
+			<div class="componentContainer underline" style="top: 34px; left: 143px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 109px;" class="antialias">
+<div style="text-align: center;"><span style="color: rgb(255, 255, 255); font-family: Lato;">What's</span></div><font color="#ffffff" face="Lato"><div style="text-align: center;">new?</div></font>
+</div>
+</div>
+</div>
+
+<div class="componentContainer " style="top: 726px; left: 18px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 12px;" class="antialias">
+<font color="#ccc" face="Lato">http://images4.fanpop.com/image/photos/15000000/Seven-seven-of-nine-15093083-2560-1600.jpg</font>
+</div>
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-21" data-x="30815.573333333334" data-y="10736.64" data-rotate-x="49.847328176381616" data-scale="5" id="step-22" style="position: absolute; transform: translate(-50%, -50%) translate3d(30815.6px, 10736.6px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-21" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="uniform-variable-syntax">Uniform Variable Syntax</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-22" data-x="30788.266666666666" data-y="11596.8" data-scale="5" id="step-23" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 11596.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-22" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>$foo-&gt;bar()();</code></pre>
+<ul>
+<li><code>$foo</code> is an object</li>
+<li><code>bar()</code> is a method that returns a callable</li>
+<li>The callable is automatically executed</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-23" data-x="30788.266666666666" data-y="14561.28" data-scale="5" id="step-24" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 14561.3px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-23" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>$foo()[‘bar’]();</code></pre>
+<ul>
+<li><code>$foo</code> is a method that returns an array.</li>
+<li><code>['bar']</code> is an element in the array returned by <code>$foo()</code></li>
+<li><code>['bar']</code> contains a callable as it’s value</li>
+<li><code>()</code> calls the callable contained in <code>['bar']</code></li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-24" data-x="30788.266666666666" data-y="17863.68" data-scale="5" id="step-25" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 17863.7px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-24" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>function getStr()
+{
+    return 'Jan Burkl';
+}
+echo getStr(){4}; // 'B'</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-25" data-x="30788.266666666666" data-y="21396.48" data-scale="5" id="step-26" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 21396.5px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-25" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p>Double $ in referencing globals are no longer supported.</p>
+<pre><code>global $$foo-&gt;bar;
+//No longer supported</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-26" data-x="30788.266666666666" data-y="24852.48" data-scale="5" id="step-27" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 24852.5px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-26" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p>There are no longer any restrictions on nesting of dereferencing operations. All of these are now supported:</p>
+<pre><code>$obj1 = new StdClass();
+$obj1-&gt;name = 'Barbara';
+$obj2 = new StdClass();
+$obj2-&gt;name = 'Jan';
+$returnVal = [$obj1, $obj2][0]-&gt;name;</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-27" data-x="30788.266666666666" data-y="28093.44" data-scale="5" id="step-28" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 28093.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-27" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<ul>
+<li><p>Reference a property statically from a class reference</p>
+<pre><code>$foo['bar']::$baz</code></pre>
+</li>
+<li><p>Statically access a nested referenced property</p>
+<pre><code>$foo::$bar::$baz</code></pre>
+</li>
+<li><p>Call a referenced method statically from a class reference returned by a method. </p>
+<pre><code>$foo-&gt;bar()::baz()</code></pre>
+</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-28" data-x="30788.266666666666" data-y="31411.2" data-scale="5" id="step-29" style="position: absolute; transform: translate(-50%, -50%) translate3d(30788.3px, 31411.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-28" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+				<br /><br />
+				<table>
+<thead>
+<tr>
+<th></th>
+<th>Old Meaning</th>
+<th>New Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid #333">
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">$$foo['bar']['baz']</code></td>
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">${$foo['bar']['baz']}</code></td>
+<td><code style="font-size:0.7em">($$foo)['bar']['baz']</code></td>
+</tr>
+<tr style="border-top: 1px solid #333">
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">$foo-&gt;$bar['baz']</code></td>
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">$foo-&gt;{$bar['baz']}</code></td>
+<td><code style="font-size:0.7em">($foo-&gt;$bar)['baz']</code></td>
+</tr>
+<tr style="border-top: 1px solid #333">
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">$foo-&gt;$bar['baz']()</code></td>
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">$foo-&gt;{$bar['baz']}()</code></td>
+<td><code style="font-size:0.7em">($foo-&gt;$bar)['baz']()</code></td>
+</tr>
+<tr style="border-top: 1px solid #333">
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">Foo::$bar['baz']()</code></td>
+<td style="border-right: 1px solid #333"><code style="font-size:0.7em">Foo::{$bar['baz']}()</code></td>
+<td><code style="font-size:0.7em">(Foo::$bar)['baz']()</code></td>
+</tr>
+</tbody>
+</table>
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-29" data-x="37027.84" data-y="10583.04" data-scale="3" id="step-30" style="position: absolute; transform: translate(-50%, -50%) translate3d(37027.8px, 10583px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-29" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-30" data-x="43199.14666666667" data-y="10552.32" data-rotate-x="49.847328176381616" data-scale="5" id="step-31" style="position: absolute; transform: translate(-50%, -50%) translate3d(43199.1px, 10552.3px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-30" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="spaceship">Spaceship</h1>
+<h2 id="combined-comparison">Combined Comparison</h2>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-31" data-x="43171.84" data-y="11381.76" data-scale="5" id="step-32" style="position: absolute; transform: translate(-50%, -50%) translate3d(43171.8px, 11381.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-31" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<ul>
+<li>PHP’s first trinary operator </li>
+</ul>
+<pre><code>echo 1&lt;=&gt;2; // -1
+echo 1&lt;=&gt;1; // 0
+echo 2&lt;=&gt;1; // 1</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-32" data-x="43185.49333333333" data-y="14607.36" data-scale="5" id="step-33" style="position: absolute; transform: translate(-50%, -50%) translate3d(43185.5px, 14607.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-32" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="arrays">Arrays</h2>
+<pre><code>echo [] &lt;=&gt; [];               //  0
+echo [1, 2, 3] &lt;=&gt; [1, 2, 3]; //  0
+echo [1, 2, 3] &lt;=&gt; [];        //  1
+echo [1, 2, 3] &lt;=&gt; [1, 2, 1]; //  1
+echo [1, 2, 3] &lt;=&gt; [1, 2, 4]; // -1</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-33" data-x="43185.49333333333" data-y="17940.48" data-scale="5" id="step-34" style="position: absolute; transform: translate(-50%, -50%) translate3d(43185.5px, 17940.5px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-33" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="objects">Objects</h2>
+<pre><code>$a = (object) ["a" =&gt; "b"];
+$b = (object) ["a" =&gt; "c"];
+echo $a &lt;=&gt; $b; // -1
+
+$a = (object) ["a" =&gt; "b"];
+$b = (object) ["a" =&gt; "b"];
+echo $a &lt;=&gt; $b; // 0</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-34" data-x="43185.49333333333" data-y="21027.84" data-scale="5" id="step-35" style="position: absolute; transform: translate(-50%, -50%) translate3d(43185.5px, 21027.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-34" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="usort-">usort()</h2>
+<pre><code>$array = ['oranges', 'apples',
+          'bananas', 'grapes'];
+usort($array,
+  function ($left,$right) {
+    return $left&lt;=&gt;$right;
+  }
+);</code></pre>
+<pre><code>
+Array (
+    [0] =&gt; apples
+    [1] =&gt; bananas
+    [2] =&gt; grapes
+    [3] =&gt; oranges
+)</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-35" data-x="51363.84" data-y="10736.64" data-rotate-x="49.847328176381616" data-scale="5" id="step-36" style="position: absolute; transform: translate(-50%, -50%) translate3d(51363.8px, 10736.6px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-35" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="anonymous-classes">Anonymous Classes</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-36" data-x="51377.49333333333" data-y="11412.48" data-scale="5" id="step-37" style="position: absolute; transform: translate(-50%, -50%) translate3d(51377.5px, 11412.5px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-36" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>$obj = new class($i) {
+    public function __construct($i) {
+        $this-&gt;i = $i;
+    };
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-37" data-x="51377.49333333333" data-y="14714.88" data-scale="5" id="step-38" style="position: absolute; transform: translate(-50%, -50%) translate3d(51377.5px, 14714.9px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-37" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>(new class extends ConsoleProgram {
+    public function main() {
+       /* ... */
+    }
+})-&gt;bootstrap();</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-38" data-x="51377.49333333333" data-y="18032.64" data-scale="5" id="step-39" style="position: absolute; transform: translate(-50%, -50%) translate3d(51377.5px, 18032.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-38" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>return new class($controller)
+    implements Page {
+
+    public function
+        __construct($controller) {
+        /* ... */
+    }
+    /* ... */
+};</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-39" data-x="51377.49333333333" data-y="21442.56" data-scale="5" id="step-40" style="position: absolute; transform: translate(-50%, -50%) translate3d(51377.5px, 21442.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-39" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>$pusher-&gt;setLogger(new class {
+    public function log($msg) {
+        print_r($msg . "\n");
+    }
+});</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-40" data-x="51391.14666666667" data-y="24698.88" data-scale="5" id="step-41" style="position: absolute; transform: translate(-50%, -50%) translate3d(51391.1px, 24698.9px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-40" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="caveats-warning-and-compatibility">Caveats, warning, and compatibility</h2>
+<ul>
+<li>Inheritance works as expected</li>
+<li>Traits work as expected</li>
+<li>Reflection now has ReflectionClass::isAnonymous() method</li>
+<li>Serialization will not work, just like with anonymous functions</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-41" data-x="60170.24" data-y="10828.8" data-rotate-x="49.847328176381616" data-scale="5" id="step-42" style="position: absolute; transform: translate(-50%, -50%) translate3d(60170.2px, 10828.8px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-41" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="generator-return-expressions">Generator Return Expressions</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-42" data-x="60142.933333333334" data-y="11688.96" data-scale="5" id="step-43" style="position: absolute; transform: translate(-50%, -50%) translate3d(60142.9px, 11689px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-42" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>function foo() {
+    $returnValue = 1;
+    yield 1;
+    $returnValue = 2;
+    yield 2;
+    return $returnValue;
+}
+
+$bar = foo();
+</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+		<div class="step future" data-state="strut-slide-42-b" data-x="60142.933333333334" data-y="14000.96" data-scale="5" id="step-43-b" style="position: absolute; transform: translate(-50%, -50%) translate3d(60142.9px, 11689px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-42-b" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>foreach ($bar as $element) {
+    echo $element, "\n";
+}
+
+var_dump($bar-&gt;getReturn());
+
+// 1
+// 2
+// int(2)</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-43" data-x="67911.68" data-y="10444.8" data-rotate-x="49.847328176381616" data-scale="5" id="step-44" style="position: absolute; transform: translate(-50%, -50%) translate3d(67911.7px, 10444.8px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-43" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="generator-delegation">Generator Delegation</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-44" data-x="67925.33333333333" data-y="11151.36" data-scale="5" id="step-45" style="position: absolute; transform: translate(-50%, -50%) translate3d(67925.3px, 11151.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-44" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>function foo() {
+    yield 1;
+    yield 2;
+}
+function both() {
+    yield from foo();
+    yield from [2, 3, 4];
+    yield "done"
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+					<div class="step future" data-state="strut-slide-44b" data-x="67925.33333333333" data-y="13551.36" data-scale="5" id="step-45b" style="position: absolute; transform: translate(-50%, -50%) translate3d(67925.3px, 11151.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-44b" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>$a = both();
+
+foreach ($a as $value) {
+    echo $value . "\n";
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-45" data-x="75885.22666666667" data-y="10444.8" data-rotate-x="49.847328176381616" data-scale="5" id="step-46" style="position: absolute; transform: translate(-50%, -50%) translate3d(75885.2px, 10444.8px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-45" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="filtered-unserialize-">Filtered unserialize()</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-46" data-x="75912.53333333334" data-y="11136" data-scale="5" id="step-47" style="position: absolute; transform: translate(-50%, -50%) translate3d(75912.5px, 11136px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-46" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>// this will unserialize everything
+// as before
+$data = unserialize($foo);</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+					<div class="step future" data-state="strut-slide-46a" data-x="75912.53333333334" data-y="12336" data-scale="5" id="step-47a" style="position: absolute; transform: translate(-50%, -50%) translate3d(75912.5px, 11136px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-46a" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>// this will convert all objects into
+// __PHP_Incomplete_Class object
+$data = unserialize(
+    $foo,
+    ["allowed_classes" =&gt; false]
+);</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+					<div class="step future" data-state="strut-slide-46c" data-x="75912.53333333334" data-y="14186" data-scale="5" id="step-47c" style="position: absolute; transform: translate(-50%, -50%) translate3d(75912.5px, 11136px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-46c" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>// converts all objects except MyClass
+// into __PHP_Incomplete_Class object
+$data = unserialize(
+    $foo,
+    ["allowed_classes" =&gt; [
+        "MyClass"
+    ]);</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+		<div class="step future" data-state="strut-slide-46d" data-x="75912.53333333334" data-y="16236" data-scale="5" id="step-47d" style="position: absolute; transform: translate(-50%, -50%) translate3d(75912.5px, 11136px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-46d" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>//accept all classes as in default
+$data = unserialize(
+    $foo,
+    ["allowed_classes" =&gt; true]
+);</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-47" data-x="83380.90666666666" data-y="10321.92" data-rotate-x="49.847328176381616" data-scale="5" id="step-48" style="position: absolute; transform: translate(-50%, -50%) translate3d(83380.9px, 10321.9px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-47" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="throwable-interface">Throwable Interface</h1>
+<h2 id="exceptions-in-the-engine">Exceptions in the engine</h2>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-48" data-x="83380.90666666666" data-y="11182.08" data-scale="5" id="step-49" style="position: absolute; transform: translate(-50%, -50%) translate3d(83380.9px, 11182.1px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-48" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>try {
+    do_something(null); // oops!
+} catch (\Error $e) {
+    echo "Err: {$e-&gt;getMessage()}\n";
+}
+
+// Error: Call to a member function
+// method() on a non-object</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-49" data-x="83394.56" data-y="14653.44" data-scale="5" id="step-50" style="position: absolute; transform: translate(-50%, -50%) translate3d(83394.6px, 14653.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-49" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<ul>
+<li>interface Throwable<ul>
+<li>Exception implements Throwable</li>
+<li>Error implements Throwable<ul>
+<li>TypeError extends Error</li>
+<li>ParseError extends Error</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-50" data-x="83394.56" data-y="18032.64" data-scale="5" id="step-51" style="position: absolute; transform: translate(-50%, -50%) translate3d(83394.6px, 18032.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-50" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>function add(int $left, int $right) {
+    return $left + $right;
+}
+</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+		<div class="step future" data-state="strut-slide-50b" data-x="83394.56" data-y="19032.64" data-scale="5" id="step-51b" style="position: absolute; transform: translate(-50%, -50%) translate3d(83394.6px, 18032.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-50b" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>try {
+    echo add('left', 'right');
+} catch (\TypeError $e) {
+    // Log error and end gracefully
+} catch (\Exception $e) {
+    // Handle any exceptions
+} catch (\Throwable $e) {
+    // Handle everything else
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-51" data-x="83408.21333333333" data-y="22365.76" data-scale="5" id="step-52" style="position: absolute; transform: translate(-50%, -50%) translate3d(83408.2px, 21365.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-51" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="parseerror">ParseError</h2>
+<ul>
+<li>Thrown when you have a parse error in your code</li>
+<li>Will not allow bad code to run at compile time.</li>
+<li>Will be thrown if you have a parse error in an eval()</li>
+<li>Will be thrown if you have a parse error in a file that is included during execution.</li>
+</ul>
+<pre><code>$code = 'var_dup($admin);';
+
+try {
+    $result = eval($code);
+} catch (\ParseError $error) {
+    // Handle $error
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-52" data-x="83421.86666666667" data-y="25744.96" data-scale="5" id="step-53" style="position: absolute; transform: translate(-50%, -50%) translate3d(83421.9px, 24745px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-52" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>if ($admin) {
+    try {
+        include "./issue_code.php";
+    } catch (\ParseError $error) {
+        // Handle $error
+    }
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-53" data-x="83421.86666666667" data-y="28854.88" data-scale="5" id="step-54" style="position: absolute; transform: translate(-50%, -50%) translate3d(83421.9px, 28154.9px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-53" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="benefits">Benefits</h2>
+<ul>
+<li>finally gets called</li>
+<li>__destruct() gets called.</li>
+<li>Fully backwardly compatible</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-54" data-x="92419.41333333333" data-y="10552.32" data-rotate-x="49.847328176381616" data-scale="5" id="step-55" style="position: absolute; transform: translate(-50%, -50%) translate3d(92419.4px, 10552.3px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-54" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="null-coalesce-operator">Null Coalesce Operator</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-55" data-x="92405.76" data-y="11228.16" data-scale="5" id="step-56" style="position: absolute; transform: translate(-50%, -50%) translate3d(92405.8px, 11228.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-55" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>$name = $firstName ?? "Jan";
+$name .=  " ";
+$name .= $lastName ?? "Burkl";</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-56" data-x="92419.41333333333" data-y="14684.16" data-scale="5" id="step-57" style="position: absolute; transform: translate(-50%, -50%) translate3d(92419.4px, 14684.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-56" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>$this-&gt;maxCount = is_null(
+    $input-&gt;getOption('count'))
+    ? -1 : $input-&gt;getOption('count');</code></pre>
+<pre><code>$this-&gt;maxCount =
+    $input-&gt;getOption('count') ?? -1;</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-57" data-x="92419.41333333333" data-y="18170.88" data-scale="5" id="step-58" style="position: absolute; transform: translate(-50%, -50%) translate3d(92419.4px, 18170.9px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-57" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>$x = NULL;
+$y = NULL;
+$z = 3;
+
+var_dump($x ?? $y ?? $z); // int(3)</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-58" data-x="102154.24" data-y="10613.76" data-rotate-x="49.847328176381616" data-scale="5" id="step-59" style="position: absolute; transform: translate(-50%, -50%) translate3d(102154px, 10613.8px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-58" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="scalar-type-hints">Scalar Type Hints</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-59" data-x="102167.89333333333" data-y="11274.24" data-scale="5" id="step-60" style="position: absolute; transform: translate(-50%, -50%) translate3d(102168px, 11274.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-59" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<ul>
+<li>int</li>
+<li>float</li>
+<li>string</li>
+<li>bool</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-60" data-x="102181.54666666666" data-y="14699.52" data-scale="5" id="step-61" style="position: absolute; transform: translate(-50%, -50%) translate3d(102182px, 14699.5px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-60" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>function add(float $a, float $b) {
+    return $a + $b;
+}
+
+$returnValue = add(1.5, 2.5);
+// int(4)
+// Works</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+					<div class="step future" data-state="strut-slide-60b" data-x="102181.54666666666" data-y="16699.52" data-scale="5" id="step-61b" style="position: absolute; transform: translate(-50%, -50%) translate3d(102182px, 14699.5px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-60b" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<pre><code>$returnValue = add("1 foo", "2");
+// PHP 5.6 and below gives a Notice
+// PHP7 TypeError
+
+$returnValue = add(1, 2); // int(3)
+// Widening</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-61" data-x="102181.54666666666" data-y="19701.6" data-scale="5" id="step-62" style="position: absolute; transform: translate(-50%, -50%) translate3d(102182px, 18201.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-61" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="widening">Widening</h2>
+<ul>
+<li>The only type casting done in strict mode</li>
+<li>Integers can be “widened” into floats.</li>
+</ul>
+<pre><code>declare(strict_types=1);
+
+function add(float $a, float $b) {
+    return $a + $b;
+}
+var_dump(add(1, 2)); // float(3)</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-62" data-x="111452.16" data-y="10306.56" data-rotate-x="49.847328176381616" data-scale="5" id="step-63" style="position: absolute; transform: translate(-50%, -50%) translate3d(111452px, 10306.6px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-62" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="return-type-declarations">Return Type Declarations</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-63" data-x="111452.16" data-y="11197.44" data-scale="5" id="step-64" style="position: absolute; transform: translate(-50%, -50%) translate3d(111452px, 11197.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-63" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<pre><code>function foo(): array {
+    return [];
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-64" data-x="111465.81333333334" data-y="14776.32" data-scale="5" id="step-65" style="position: absolute; transform: translate(-50%, -50%) translate3d(111466px, 14776.3px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-64" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h2 id="not-allowed">Not Allowed</h2>
+<ul>
+<li>You cannot change the return type of a subclassed method.</li>
+</ul>
+<pre><code>class MyClass{
+    public function foo(): array {
+        return [];
+    }
+}
+class MyOtherClass extends MyClass {
+    public function foo(): MyClass {
+        return new MyClass();
+    }
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-65" data-x="111616" data-y="16481.28" data-scale="8" id="step-66" style="position: absolute; transform: translate(-50%, -50%) translate3d(111616px, 16481.3px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(8); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-65" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<h2 id="allowed">ALLOWED</h2>
+<pre><code>class MyClass {
+    function make(): MyClass {
+        return new MyClass();
+    }
+}
+class MyOtherClass extends MyClass {
+    function make(): MyOtherClass {
+        return new MyOtherClass();
+    }
+}</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-66" data-x="121132.37333333334" data-y="10337.28" data-rotate-x="49.847328176381616" data-scale="5" id="step-67" style="position: absolute; transform: translate(-50%, -50%) translate3d(121132px, 10337.3px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-66" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="group-use-declarations">Group Use Declarations</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-67" data-x="121118.72" data-y="11228.16" data-scale="5" id="step-68" style="position: absolute; transform: translate(-50%, -50%) translate3d(121119px, 11228.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-67" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<h2 id="before">Before</h2>
+<pre><code>namespace MyProj\Command;
+
+use MyProj\Traits\WritelineTrait;
+use MyProj\Twitter;
+
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-68" data-x="121050.45333333334" data-y="13117.44" data-scale="8" id="step-69" style="position: absolute; transform: translate(-50%, -50%) translate3d(121050px, 13117.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(8); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-68" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<h2 id="after">After</h2>
+<pre><code>namespace MyProj\Command;
+use MyProj\ {
+    Traits\WritelineTrait,
+    Twitter
+};
+use Symfony\Component\Console\ {
+    Command\Command,
+    Input\InputOption,
+    Output\OutputInterface
+};</code></pre>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step future" data-state="strut-slide-69" data-x="130129.92" data-y="10199.04" data-rotate-x="49.847328176381616" data-scale="5" id="step-70" style="position: absolute; transform: translate(-50%, -50%) translate3d(130130px, 10199px, 0px) rotateX(49.8473deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-69" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h1 id="new-features-that-do-not-break-things">New Features that do not break things</h1>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step past" data-state="strut-slide-70" data-x="130129.92" data-y="11151.36" data-scale="5" id="step-71" style="position: absolute; transform: translate(-50%, -50%) translate3d(130130px, 11151.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(5); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-70" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br></p>
+<ul>
+<li>Integer Semantics</li>
+<li>Unicode Codepoint Escape Syntax</li>
+<li>Array Constants</li>
+<li>Expectations</li>
+</ul>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step past" data-state="strut-slide-71" data-x="137570.98666666666" data-y="17095.68" data-scale="3" id="step-72" style="position: absolute; transform: translate(-50%, -50%) translate3d(137571px, 17095.7px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-71" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+
+			</div>
+
+			<div class="componentContainer box box2t075" style="top: 426px; left: 44.77px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 878.53px; height: 240.46px;">
+<div class="transformContainer" style="-webkit-transform: scale(, );
+-moz-transform: scale(, );
+transform: scale(, )">
+<svg height="240.46496325881597" width="878.525328590496" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 50 50" preserveAspectRatio="none"><rect width="50" height="50"></rect></svg>
+</div>
+</div>
+
+			<div class="componentContainer underline" style="top: 443px; left: 341px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 85px;" class="antialias">
+<font color="#ffffff" face="Lato">The Big 3</font>
+</div>
+</div>
+</div>
+
+			<div class="componentContainer " style="top: 582px; left: 64px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 42px;" class="antialias">
+<font color="#ffffff" face="Lato">PHP NG // Engine Exceptions // Scalar Type Hints</font>
+</div>
+</div>
+</div>
+
+			<div class="componentContainer " style="top: 726px; left: 18px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 12px;" class="antialias">
+<font color="#ffffff" face="Lato">http://img15.deviantart.net/d7ab/i/2011/126/c/e/avengers_big_3_by_bigbmh-d3fomu1.png</font>
+</div>
+</div>
+</div>
+
+			</div>
+
+		</div>
+
+
+			<div class="step active present" data-state="strut-slide-72" data-x="136724.48" data-y="20951.04" data-rotate-x="-37.24225668350351" data-rotate-z="-34.37746770784939" data-scale="7" id="step-73" style="position: absolute; transform: translate(-50%, -50%) translate3d(136724px, 20951px, 0px) rotateX(-37.2423deg) rotateY(0deg) rotateZ(-34.3775deg) scale(7); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-72" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<p><br>
+<br>
+<br>
+<br></p>
+<h2 id="danke-sch-n-">Danke schön!</h2>
+<h3 id="jan-zend-com">jan@zend.com</h3>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+</div></div>
+
+</div>
+</div>
+
+ <div id="phpruhrlogo" style="background: url(img/zend-logo.png);
+                        position: absolute;
+                        bottom: 45px;
+                        left: 100px;
+                        width: 108px;
+                        height: 120px;"></div>
+
+  <div id="phpruhrlogo" style="background: url(img/phpruhr_logo_2015.png);
+                        position: absolute;
+                        bottom: 60px;
+                        right: 100px;
+                        width: 126px;
+                        height: 80px;"></div>
+
+</body></html>
