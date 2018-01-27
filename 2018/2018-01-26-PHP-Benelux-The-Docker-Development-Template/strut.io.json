@@ -1,0 +1,1331 @@
+{
+  "slides": [
+    {
+      "components": [],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 0,
+      "selected": false,
+      "active": false,
+      "x": 180,
+      "y": 180,
+      "background": "img:http://i.imgur.com/8gWSDzj.png"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 257,
+          "y": 121,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(238, 238, 238);\"><font face=\"League Gothic, sans-serif\">Docker</font></span></div><font color=\"#eeeeee\" face=\"League Gothic, sans-serif\"><div style=\"text-align: center;\">Development</div><div style=\"text-align: center;\">Template</div></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 1,
+      "selected": false,
+      "active": false,
+      "x": 460,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 224,
+          "y": 184,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 64,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Jan Burkl<br>Solution Consultant<br>Zend Technologies / Rogue Wave<br>jan@zend.com // @5square_de<br>jan.burkl@roguewave.com<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 2,
+      "selected": false,
+      "active": false,
+      "x": 740,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 30,
+          "y": 508,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">Developer's Dream</font>",
+          "selected": false,
+          "customClasses": "box developersDream"
+        },
+        {
+          "TextBox": {},
+          "x": 561,
+          "y": 716,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 16,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">https://www.justwatch.com/de/Film/Der-Flug-des-Navigators</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 3,
+      "selected": false,
+      "active": false,
+      "x": 1016,
+      "y": 179,
+      "background": "img:http://i.imgur.com/SHaLelp.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 56,
+          "y": 113,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\"><font face=\"League Gothic, sans-serif\">1. Get Code<br>2. Get Dependencies<br>3. Start the Engines</font><br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 4,
+      "selected": false,
+      "active": false,
+      "x": 1017,
+      "y": 385
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 518,
+          "y": 196,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#296394\">Fast Forward</font>",
+          "selected": false,
+          "customClasses": "fastforward"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.96,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 5,
+      "selected": false,
+      "active": false,
+      "x": 555,
+      "y": 522,
+      "background": "img:http://i.imgur.com/YSSpbZp.jpg"
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/6gQC5fP.png",
+          "type": "Image",
+          "x": 133,
+          "y": 427,
+          "scale": {
+            "x": 0.3795,
+            "y": 0.3795,
+            "width": 759,
+            "height": 201.894
+          },
+          "imageType": "PNG",
+          "selected": false
+        },
+        {
+          "src": "http://i.imgur.com/Y97S2tH.png",
+          "type": "Image",
+          "x": 289,
+          "y": 106,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.96,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 6,
+      "selected": false,
+      "active": false,
+      "x": 553,
+      "y": 702
+    },
+    {
+      "components": [
+        {
+          "src": "https://s3.amazonaws.com/docker-development-template/vault/makeall.webm",
+          "type": "Video",
+          "x": 6,
+          "y": 102,
+          "scale": {
+            "x": 0.5270833333333333,
+            "y": 0.5270833333333333,
+            "width": 1012,
+            "height": 565.0333333333333
+          },
+          "shortSrc": "https://s3.amazonaws.com/docker-development-template/vault/makeall.webm",
+          "videoType": "html5",
+          "srcType": "video/webm",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0.96,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 7,
+      "selected": false,
+      "active": false,
+      "x": 554,
+      "y": 891
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 361,
+          "y": 336,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic, sans-serif\">What has happened?</font>",
+          "selected": false,
+          "customClasses": "whatHasHappened box"
+        },
+        {
+          "TextBox": {},
+          "x": 250,
+          "y": 709,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">http://www.gamona.de/kino-dvd/deadpool-2,autoren-auch-das-sequel-benoetigt-kein-hohes-budget:news.html</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 8,
+      "selected": false,
+      "active": false,
+      "background": "img:http://i.imgur.com/1daagIz.jpg",
+      "x": 1307,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 238,
+          "y": 324,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font face=\"League Gothic\" color=\"#ffffff\">docker-dev-template</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 65,
+          "y": 567,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">https://bitbucket.org/account/user/janatzendteam/projects/DOC</span></div>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 341,
+          "y": 247,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 64,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">My example project</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 9,
+      "selected": false,
+      "active": false,
+      "x": 1311,
+      "y": 384
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 199,
+          "y": 294,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">What do I need?</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 10,
+      "selected": false,
+      "active": false,
+      "x": 1312,
+      "y": 580
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/fCg808r.png",
+          "type": "Image",
+          "x": 138,
+          "y": 51,
+          "scale": {
+            "x": 0.552437223042836,
+            "y": 0.552437223042836,
+            "width": 748,
+            "height": 667.3441654357459
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 11,
+      "selected": false,
+      "active": false,
+      "x": 1311,
+      "y": 780
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": -23,
+          "y": 262,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">Docker U+2260 VirtualBox</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 12,
+      "selected": false,
+      "active": false,
+      "x": 1310,
+      "y": 990
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/X6fdTqY.png",
+          "type": "Image",
+          "x": 181,
+          "y": 93,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 1.31,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 13,
+      "selected": false,
+      "active": false,
+      "background": "bg-transparent",
+      "surface": "bg-default",
+      "x": 1617,
+      "y": 1115
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 241,
+          "y": 113,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(238, 238, 238); font-family: &quot;League Gothic&quot;;\">one&nbsp;</span><span style=\"color: rgb(238, 238, 238); font-family: &quot;League Gothic&quot;;\">daemon</span></div><div style=\"text-align: center;\"><span style=\"color: rgb(238, 238, 238); font-family: &quot;League Gothic&quot;;\">=</span></div><div style=\"text-align: center;\"><span style=\"color: rgb(238, 238, 238); font-family: &quot;League Gothic&quot;;\">one container</span></div>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 14,
+      "selected": false,
+      "active": false,
+      "x": 1309,
+      "y": 1184
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 141,
+          "y": 93,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"Ubuntu\">\"In almost all cases, you should <br>only run a single process in a single <br>container. Decoupling applications <br>into multiple containers makes it <br>much easier to scale horizontally <br>and reuse containers. If that service <br>depends on another service, <br>make use of container linking.\"</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 72,
+          "y": 679,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font color=\"#ffffff\" face=\"Ubuntu\">https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 15,
+      "selected": false,
+      "active": false,
+      "x": 1308,
+      "y": 1381
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 189,
+          "y": 157,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">Docker Compose</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 113,
+          "y": 390,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 64,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">\"Compose is a tool for defining and <br><div style=\"text-align: center;\">running multi-container Docker applications.\"&nbsp;</div></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 16,
+      "selected": false,
+      "active": false,
+      "x": 1308,
+      "y": 1581
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/ZbUhpV9.png",
+          "type": "Image",
+          "x": 206,
+          "y": 50,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 1.48,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 17,
+      "selected": false,
+      "active": false,
+      "background": "bg-transparent",
+      "x": 1917,
+      "y": 1317
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/ldJ0sqI.png",
+          "type": "Image",
+          "x": 73,
+          "y": 8,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 1.66,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 18,
+      "selected": false,
+      "active": false,
+      "background": "bg-transparent",
+      "x": 2188,
+      "y": 1569
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 441,
+          "y": 450,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Challenge</font>",
+          "selected": false,
+          "customClasses": "box challenge"
+        },
+        {
+          "TextBox": {},
+          "x": 565,
+          "y": 716,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">http://www.foxmovies.com/movies/kingsman-the-secret-service</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 19,
+      "selected": false,
+      "active": false,
+      "x": 1625,
+      "y": 181,
+      "background": "img:http://i.imgur.com/0Ozja8V.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 134,
+          "y": 272,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"Ubuntu, sans-serif\">docker run -d -i -t -p 80:80 -p \\<br>3000:3000 -p 3001:3001 -p \\<br>2222:22 --name gsd alankent/gsd</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 20,
+      "selected": false,
+      "active": false,
+      "x": 1632,
+      "y": 390
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 34,
+          "y": 252,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"Ubuntu\">docker run -it --rm --name my-running-script \\<br>-v \"$PWD\":/usr/src/myapp \\<br>-w /usr/src/myapp php:7.0-cli \\<br>php your-script.php</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 21,
+      "selected": false,
+      "active": false,
+      "x": 1633,
+      "y": 501
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 96,
+          "y": 523,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 36,
+          "text": "<font face=\"League Gothic\" color=\"#ffffff\">Andy Weir, The Martian</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 92,
+          "y": 220,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Duct tape works anywhere. <br>Duct tape is magic and <br>should be worshiped.</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 290,
+          "y": 725,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">http://the-martian-movie.tumblr.com/post/128648842093/duct-tape-here-duct-tape-there-engineering-on</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 22,
+      "selected": false,
+      "active": false,
+      "background": "img:http://i.imgur.com/VlxYVxi.png",
+      "surface": "bg-default",
+      "x": 1931,
+      "y": 175
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 122,
+          "y": 156,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">docker-compose.yml<br><div style=\"text-align: center;\">(.env)</div></font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 51,
+          "y": 630,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 36,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">#link https://bitbucket.org/janatzendteam/development/src/master/docker-compose.yml<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 23,
+      "selected": false,
+      "active": false,
+      "x": 1933,
+      "y": 373
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 130,
+          "y": 294,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">docker-compose:<br>helps me defining (dev) infrastructure<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 24,
+      "selected": false,
+      "active": false,
+      "x": 1935,
+      "y": 564
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 527,
+          "y": 42,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#eeeeee\" face=\"League Gothic\">Makefile</font>",
+          "selected": false,
+          "customClasses": "box makefile"
+        },
+        {
+          "TextBox": {},
+          "x": 19,
+          "y": 615,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font face=\"League Gothic\">https://bitbucket.org/janatzendteam/development/src/master/Makefile<br></font>",
+          "selected": false,
+          "customClasses": "whitebox"
+        },
+        {
+          "TextBox": {},
+          "x": 619,
+          "y": 728,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font face=\"League Gothic\">http://90to5.org/5MM/2015/ferris-buellers-day-off-1986/</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 25,
+      "selected": false,
+      "active": false,
+      "x": 2256,
+      "y": 172,
+      "background": "img:http://i.imgur.com/CgvwVX0.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 125,
+          "y": 294,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">make:<br>helps me controlling the infrastructure<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 26,
+      "selected": false,
+      "active": false,
+      "x": 2258,
+      "y": 374
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 294,
+          "y": 118,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Important Commands:<br><ul><li>make build<br></li><li>make up<br></li><li>make stop<br></li><li>make clean<br></li><li>make docker-build</li><li>make exec-php</li></ul></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 27,
+      "selected": false,
+      "active": false,
+      "x": 2261,
+      "y": 570
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 55,
+          "y": 36,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Docker Image - (pull or) build</font>",
+          "selected": false,
+          "customClasses": "box dockerimage"
+        },
+        {
+          "TextBox": {},
+          "x": 258,
+          "y": 721,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font face=\"League Gothic\" color=\"#ffffff\">http://www.theatlantic.com/technology/archive/2013/10/how-realistic-is-the-movie-em-gravity-em/280211/</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 28,
+      "selected": false,
+      "active": false,
+      "x": 2576,
+      "y": 171,
+      "background": "img:http://i.imgur.com/cjyCjQL.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 83,
+          "y": 277,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<ul><li><font color=\"#ffffff\">Docker Hub<br></font></li><li><font color=\"#ffffff\">Private Docker Repository<br></font></li><li><font color=\"#ffffff\">Local Dockerfile<br></font></li><li><font color=\"#ffffff\">Remote Dockerfile</font><br></li></ul><font color=\"#eeeeee\" face=\"League Gothic\"><br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 29,
+      "selected": false,
+      "active": false,
+      "x": 2580,
+      "y": 375
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 699,
+          "y": 56,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">FAIL</font>",
+          "selected": false,
+          "customClasses": "box fail"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 30,
+      "selected": false,
+      "active": false,
+      "x": 2886,
+      "y": 171,
+      "background": "img:http://i.imgur.com/mZtidzz.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 94,
+          "y": 235,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<ul><li><font color=\"#ffffff\">Docker Updates</font><br></li><li><font color=\"#ffffff\">Docker Compose Updates</font></li><li><font color=\"#ffffff\">Permissions</font></li><li><font color=\"#ffffff\">Persistent Data</font></li></ul>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": -0.02,
+      "rotateZ": 0,
+      "index": 31,
+      "selected": false,
+      "active": false,
+      "x": 2887,
+      "y": 372
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 171,
+          "y": 118,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Permissions? What's the problem?</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 170,
+          "y": 305,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<ul><li><font color=\"#ffffff\">apache writes files</font></li><li><font color=\"#ffffff\">write access for www-data<br></font></li><li><font color=\"#ffffff\">www-data not available on host<br></font></li><li><font color=\"#ffffff\">use uid and gid of local user (#)</font></li><li><font color=\"#ffffff\">chmod on apache dirs</font></li></ul><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 32,
+      "selected": false,
+      "active": false,
+      "x": 2888,
+      "y": 574
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 388,
+          "y": 125,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Database</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 492,
+          "y": 271,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">or</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 260,
+          "y": 402,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 96,
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">Where to store&nbsp;</span></div><font color=\"#ffffff\" face=\"League Gothic\"><div style=\"text-align: center;\">my persitent Data?</div></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 33,
+      "selected": false,
+      "active": false,
+      "x": 2888,
+      "y": 779
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 189,
+          "y": 331,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<ul><li><font color=\"#ffffff\">use Makefile to prepare</font></li><li><font color=\"#ffffff\">map local dir to /var/lib/mysql</font><br></li></ul>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 34,
+      "selected": false,
+      "active": false,
+      "x": 2886,
+      "y": 982
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 478,
+          "y": 489,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Benefits</font>",
+          "selected": false,
+          "customClasses": "box benefits"
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 35,
+      "selected": true,
+      "active": true,
+      "x": 3210,
+      "y": 174,
+      "background": "img:http://i.imgur.com/oBqWRvX.jpg"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 100,
+          "y": 235,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<ul><li><font color=\"#ffffff\">no huge files to handle<br></font></li><li><font color=\"#ffffff\">exchange containers<br></font></li><li><font color=\"#ffffff\">every step is documented</font><br></li><li><font color=\"#ffffff\">quick start</font></li></ul>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 36,
+      "selected": false,
+      "active": false,
+      "x": 3215,
+      "y": 371
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 264,
+          "y": 180,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 144,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">Danke schön</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 239,
+          "y": 436,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-family: &quot;League Gothic&quot;;\">jan@zend.com / @5square_de</span></div>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 65,
+          "y": 556,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 48,
+          "text": "<font color=\"#ffffff\" face=\"League Gothic\">https://bitbucket.org/account/user/janatzendteam/projects/DOC</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 1,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 37,
+      "selected": false,
+      "active": false,
+      "x": 3453,
+      "y": 159
+    }
+  ],
+  "background": "bg-custom-296394",
+  "activeSlide": {
+    "components": [
+      {
+        "TextBox": {},
+        "x": 478,
+        "y": 489,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "type": "TextBox",
+        "size": 144,
+        "text": "<font color=\"#ffffff\" face=\"League Gothic\">Benefits</font>",
+        "selected": false,
+        "customClasses": "box benefits"
+      }
+    ],
+    "z": 0,
+    "impScale": 3,
+    "rotateX": 0,
+    "rotateY": 0,
+    "rotateZ": 0,
+    "index": 35,
+    "selected": true,
+    "active": true,
+    "x": 3210,
+    "y": 174,
+    "background": "img:http://i.imgur.com/oBqWRvX.jpg"
+  },
+  "fileName": "presentation-2",
+  "customStylesheet": "/*.example {\n\tborder: 4px groove orange;\n}*/\n.strut-surface .box {\n  padding-left: 60px;\n  padding-right: 60px;\n}\n.strut-surface .whitebox {\n  background: rgba(255,255,255,0.4);\n}\n.strut-surface .fastforward {\n  padding-left: 60px;\n  padding-right: 60px;\n  background: rgba(226,100,47,0.7);\n}\n.strut-surface .whatHasHappened {\n  background: rgba(116, 64, 77,0.7);\n}\n.strut-surface .developersDream {\n  background: rgba(43, 51, 92,0.7);\n}\n.strut-surface .fail {\n  background: rgba(38, 51, 40,0.7);\n}\n.strut-surface .challenge {\n  background: rgba(128, 83, 50,0.7);\n}\n.strut-surface .benefits {\n  background: rgba(65, 22, 5,0.7);\n}\n.strut-surface .makefile {\n  background: rgba(134, 89, 66,0.7);\n}\n.strut-surface .dockerimage {\n  background: rgba(116, 162, 200,0.7);\n}\n\n\n\n\n",
+  "deckVersion": "1.0",
+  "customBackgrounds": {
+    "bgs": [
+      {
+        "klass": "bg-custom-296394",
+        "style": "#296394"
+      }
+    ]
+  },
+  "overviewX": 1816.5,
+  "overviewY": 870
+}

@@ -1,0 +1,13 @@
+#-------------------------------------------------------------------------------
+# cmd to run: docker-compose run --rm decktape
+#-------------------------------------------------------------------------------
+
+version: "2"
+
+services:
+
+  decktape:
+    image: astefanutti/decktape
+    volumes:
+      - .:/slides
+    command: -s 1024x768 The_Docker_Development_Template.html x.pdf
